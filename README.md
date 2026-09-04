@@ -10,10 +10,16 @@ auth/storage/books once credentials exist.
 
 ## What's here (Phase 1 scaffold)
 
-- **Dashboard (`/`, Ilm al-Nujum)** — dark navy/gold card layout, Hijri date
-  header, ruling planet / next prayer / planetary hour / tomorrow cards, and
-  a Quick Start row. Cards are placeholders ("coming soon") until wired to a
-  live ephemeris source — see [Open items](#open-items) below.
+- **Dashboard (`/`, Ilm al-Nujum)** — redesigned to match a supplied
+  reference layout: two-row header (logo + FR/EN/AR language-pill switcher,
+  then title/date + search + settings), a 2×2 ruling-planet/planetary-hour/
+  next-prayer/tomorrow grid with status badges, and a horizontally-scrolling
+  "Manuscript Marketplace" strip. **The 2×2 grid's content is static example
+  data matching the reference design, not live** — the ephemeris/dignity
+  backend still isn't wired up (see "What's NOT wired up yet" below); swap
+  `IlmAlNujumGrid.tsx`'s hardcoded values for a real fetch once that exists.
+  The marketplace pulls from `content/books.ts` (3 sample entries) and
+  renders a generated gradient placeholder in place of real cover art.
 - **Istikhara (`/istikhara`)** — name + mother's-name form, running the
   ported abjad/zodiac engine live, framed as a question-guided reading (not
   "Who Am I"). Result content is now the **full per-sign profile** ported

@@ -12,13 +12,19 @@
   "dashboard": {
     "title": "Ilm al-Nujum",
     "rulingPlanet": "Planète régente du jour",
+    "planetaryHour": "Heure planétaire actuelle",
     "nextPrayer": "Prochaine prière",
-    "planetaryHour": "Heure planétaire",
-    "tomorrow": "Demain",
-    "quickStart": "Accès rapide",
-    "caution": "Avertissement",
-    "nextChange": "Prochain changement",
-    "comingSoon": "Données éphémérides en direct bientôt disponibles"
+    "tomorrow": "Aperçu de demain",
+    "countdown": "compte à rebours",
+    "search": "Rechercher",
+    "statusGood": "Bon",
+    "statusExcellent": "Excellent",
+    "statusMalefic": "Maléfique"
+  },
+  "marketplace": {
+    "title": "Marché des manuscrits",
+    "subtitle": "Manuscrits en vedette",
+    "viewDetail": "Voir le détail"
   },
   "istikhara": {
     "title": "Istikhara",

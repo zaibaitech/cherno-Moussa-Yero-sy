@@ -12,13 +12,19 @@
   "dashboard": {
     "title": "Ilm al-Nujum",
     "rulingPlanet": "Today's Ruling Planet",
+    "planetaryHour": "Current Planetary Hour",
     "nextPrayer": "Next Prayer",
-    "planetaryHour": "Planetary Hour",
-    "tomorrow": "Tomorrow",
-    "quickStart": "Quick Start",
-    "caution": "Caution",
-    "nextChange": "Next change",
-    "comingSoon": "Live ephemeris data coming soon"
+    "tomorrow": "Tomorrow's Preview",
+    "countdown": "countdown",
+    "search": "Search",
+    "statusGood": "Good",
+    "statusExcellent": "Excellent",
+    "statusMalefic": "Malefic"
+  },
+  "marketplace": {
+    "title": "Manuscript Marketplace",
+    "subtitle": "Featured Manuscripts",
+    "viewDetail": "View Detail"
   },
   "istikhara": {
     "title": "Istikhara",

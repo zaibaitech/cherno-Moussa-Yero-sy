@@ -1,5 +1,7 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Settings } from 'lucide-react';
+import { LanguageSwitcher } from './LanguageSwitcher';
+import { SearchBar } from './SearchBar';
 
 // Intl's own part ordering (weekday/month/day vs. weekday/day/month) is kept
 // as-is per locale — only the era abbreviation is patched: Node's ICU data
@@ -30,12 +32,33 @@ export async function Header() {
   const hijri = hijriDate(locale);
 
   return (
-    <header className="flex flex-col gap-1 border-b border-white/5 px-4 pb-3 pt-5">
+    <header className="flex flex-col gap-3 border-b border-white/5 px-4 pb-4 pt-4">
       <div className="flex items-center justify-between">
-        <span className="text-lg font-semibold tracking-wide text-gold">{t('name')}</span>
-        <Settings size={20} className="text-slate-400" aria-hidden />
+        <div className="flex items-center gap-2">
+          <span className="flex h-7 w-7 items-center justify-center rounded-full border border-gold/40 text-sm font-semibold text-gold">
+            D
+          </span>
+          <span className="text-sm font-medium tracking-wide text-gold">{t('name')}</span>
+        </div>
+        <LanguageSwitcher />
       </div>
-      {hijri && <p className="text-xs text-slate-400">{hijri}</p>}
+
+      <div className="flex items-center justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-semibold tracking-wide text-gold">{t('name')}</h1>
+          {hijri && <p className="text-xs text-slate-400">{hijri}</p>}
+        </div>
+        <div className="flex items-center gap-2">
+          <SearchBar />
+          <button
+            type="button"
+            aria-label="Settings"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/10 text-slate-400"
+          >
+            <Settings size={18} aria-hidden />
+          </button>
+        </div>
+      </div>
     </header>
   );
 }

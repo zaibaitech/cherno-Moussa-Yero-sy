@@ -1,10 +1,19 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import { BOOKS } from '@/content/books';
 import { WAVE_STATIC_PAY_LINK } from '@/lib/wave';
 import { Card } from '@/components/ui/Card';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, BookMarked } from 'lucide-react';
+
+type Locale = 'en' | 'fr' | 'ar';
+
+const COVER_GRADIENTS = [
+  'from-amber-900 via-amber-800 to-navy',
+  'from-rose-950 via-amber-900 to-navy',
+  'from-stone-800 via-amber-950 to-navy',
+];
 
 export default async function BooksPage() {
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations('books');
 
   return (
@@ -19,16 +28,25 @@ export default async function BooksPage() {
       ) : (
         <div className="flex flex-col gap-3">
           {BOOKS.map((book) => (
-            <Card key={book.id}>
-              <p className="font-medium text-slate-100">{book.title.en}</p>
-              <a
-                href={WAVE_STATIC_PAY_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block rounded-xl bg-gold px-4 py-2 text-sm font-medium text-navy"
+            <Card key={book.id} className="flex gap-3">
+              <div
+                className={`flex h-20 w-16 shrink-0 items-center justify-center rounded-lg border border-gold/20 bg-gradient-to-br ${COVER_GRADIENTS[book.coverSeed % COVER_GRADIENTS.length]}`}
               >
-                {t('payWithWave')}
-              </a>
+                <BookMarked size={20} className="text-gold/60" aria-hidden />
+              </div>
+              <div className="flex flex-1 flex-col">
+                <p className="font-medium text-slate-100">{book.title[locale]}</p>
+                <p className="text-xs text-slate-500">{book.metadata[locale]}</p>
+                <p className="mt-1 text-sm font-semibold text-gold">{book.priceDisplay}</p>
+                <a
+                  href={WAVE_STATIC_PAY_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block self-start rounded-xl bg-gold px-4 py-2 text-sm font-medium text-navy"
+                >
+                  {t('payWithWave')}
+                </a>
+              </div>
             </Card>
           ))}
         </div>

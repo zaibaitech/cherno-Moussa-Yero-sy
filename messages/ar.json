@@ -12,13 +12,19 @@
   "dashboard": {
     "title": "علم النجوم",
     "rulingPlanet": "الكوكب الحاكم اليوم",
+    "planetaryHour": "الساعة الفلكية الحالية",
     "nextPrayer": "الصلاة القادمة",
-    "planetaryHour": "الساعة الفلكية",
-    "tomorrow": "غدًا",
-    "quickStart": "بداية سريعة",
-    "caution": "تنبيه",
-    "nextChange": "التغيير القادم",
-    "comingSoon": "بيانات الأفلاك المباشرة قريبًا"
+    "tomorrow": "نظرة على الغد",
+    "countdown": "العد التنازلي",
+    "search": "بحث",
+    "statusGood": "جيد",
+    "statusExcellent": "ممتاز",
+    "statusMalefic": "نحس"
+  },
+  "marketplace": {
+    "title": "سوق المخطوطات",
+    "subtitle": "مخطوطات مميزة",
+    "viewDetail": "عرض التفاصيل"
   },
   "istikhara": {
     "title": "الاستخارة",
