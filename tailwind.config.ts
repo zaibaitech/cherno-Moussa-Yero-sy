@@ -18,6 +18,7 @@ const config: Config = {
       },
       fontFamily: {
         arabic: ['var(--font-arabic)', 'sans-serif'],
+        logo: ['var(--font-cinzel)', 'Georgia', 'serif'],
       },
     },
   },

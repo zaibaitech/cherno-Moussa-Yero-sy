@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, isRtl, type Locale } from '@/lib/i18n/config';
+import { cinzel } from '@/lib/fonts';
 import { Header } from '@/components/layout/Header';
 import { BottomNav } from '@/components/layout/BottomNav';
 import '../globals.css';
@@ -35,7 +36,7 @@ export default async function LocaleLayout({
   const dir = isRtl(locale) ? 'rtl' : 'ltr';
 
   return (
-    <html lang={locale} dir={dir}>
+    <html lang={locale} dir={dir} className={cinzel.variable}>
       <body className="min-h-screen bg-navy text-slate-100 antialiased">
         <NextIntlClientProvider messages={messages}>
           <div className="mx-auto flex min-h-screen max-w-md flex-col">

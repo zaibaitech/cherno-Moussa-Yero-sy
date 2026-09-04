@@ -2,6 +2,7 @@ import { getLocale, getTranslations } from 'next-intl/server';
 import { Settings } from 'lucide-react';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { SearchBar } from './SearchBar';
+import { DeftereLogo } from './DeftereLogo';
 
 // Intl's own part ordering (weekday/month/day vs. weekday/day/month) is kept
 // as-is per locale — only the era abbreviation is patched: Node's ICU data
@@ -34,18 +35,13 @@ export async function Header() {
   return (
     <header className="flex flex-col gap-3 border-b border-white/5 px-4 pb-4 pt-4">
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <span className="flex h-7 w-7 items-center justify-center rounded-full border border-gold/40 text-sm font-semibold text-gold">
-            D
-          </span>
-          <span className="text-sm font-medium tracking-wide text-gold">{t('name')}</span>
-        </div>
+        <DeftereLogo size={32} />
         <LanguageSwitcher />
       </div>
 
       <div className="flex items-center justify-between gap-3">
         <div>
-          <h1 className="text-2xl font-semibold tracking-wide text-gold">{t('name')}</h1>
+          <h1 className="font-logo text-2xl font-medium tracking-wide text-gold">{t('name')}</h1>
           {hijri && <p className="text-xs text-slate-400">{hijri}</p>}
         </div>
         <div className="flex items-center gap-2">
