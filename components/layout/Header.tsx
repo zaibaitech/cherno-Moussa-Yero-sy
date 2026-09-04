@@ -1,7 +1,13 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Settings } from 'lucide-react';
 
-function hijriDate(locale: string) {
+// Intl's own part ordering (weekday/month/day vs. weekday/day/month) is kept
+// as-is per locale — only the era abbreviation is patched: Node's ICU data
+// has no French Hijri era string, so `fr-u-ca-islamic-umalqura` silently
+// renders the English "AH" instead of a French one.
+const HIJRI_ERA: Record<string, string> = { fr: 'H.' };
+
+function hijriDate(locale: string): string | null {
   try {
     const formatter = new Intl.DateTimeFormat(`${locale}-u-ca-islamic-umalqura`, {
       day: 'numeric',
@@ -9,7 +15,10 @@ function hijriDate(locale: string) {
       year: 'numeric',
       weekday: 'long',
     });
-    return formatter.format(new Date());
+    return formatter
+      .formatToParts(new Date())
+      .map((part) => (part.type === 'era' ? (HIJRI_ERA[locale] ?? part.value) : part.value))
+      .join('');
   } catch {
     return null;
   }
