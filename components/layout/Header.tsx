@@ -35,7 +35,7 @@ export async function Header() {
   return (
     <header className="flex flex-col gap-3 border-b border-white/5 px-4 pb-4 pt-4">
       <div className="flex items-center justify-between">
-        <DeftereLogo size={32} />
+        <DeftereLogo width={150} />
         <LanguageSwitcher />
       </div>
 
