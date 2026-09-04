@@ -3,8 +3,10 @@
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { calculateNameCompatibility, type RelationshipCompatibility } from '@/lib/abjad/compatibility';
+import type { SoulNumber } from '@/lib/abjad/soul-connection';
 import { Card } from '@/components/ui/Card';
 import { ScoreBar } from './ScoreBar';
+import { SoulConnectionSection } from './SoulConnectionSection';
 
 type Locale = 'en' | 'fr' | 'ar';
 
@@ -33,7 +35,6 @@ export function CompatibilityForm() {
 
   const methodRows = result
     ? [
-        { label: t('spiritualDestiny'), r: result.methods.spiritualDestiny },
         { label: t('elementalTemperament'), r: result.methods.elementalTemperament },
         { label: t('planetaryCosmic'), r: result.methods.planetaryCosmic },
         { label: t('dailyInteraction'), r: result.methods.dailyInteraction },
@@ -91,7 +92,18 @@ export function CompatibilityForm() {
             <p className="mt-3 text-sm text-slate-300">{summary}</p>
           </Card>
 
+          <SoulConnectionSection
+            soulNumber={result.methods.spiritualDestiny.remainder as SoulNumber}
+            person1Name={name1}
+            person1Arabic={name1}
+            person1Kabir={result.person1.abjadTotal}
+            person2Name={name2}
+            person2Arabic={name2}
+            person2Kabir={result.person2.abjadTotal}
+          />
+
           <Card className="flex flex-col gap-4">
+            <h3 className="text-sm font-medium text-slate-200">{t('harmonyTitle')}</h3>
             {methodRows.map(({ label, r }) => (
               <div key={label} className="flex flex-col gap-1">
                 <ScoreBar label={label} score={r.score} />

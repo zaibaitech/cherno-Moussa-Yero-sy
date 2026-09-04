@@ -1,0 +1,1512 @@
+{
+  "title": {
+    "en": "Soul Connection",
+    "fr": "Connexion d'Âme",
+    "ar": "الارتباط الروحي"
+  },
+  "subtitle": {
+    "en": "A traditional soul-resonance marker",
+    "fr": "Un marqueur traditionnel de résonance de l'âme",
+    "ar": "مؤشر تقليدي لرنين الأرواح"
+  },
+  "independentChip": {
+    "en": "Independent metric",
+    "fr": "Métrique indépendante",
+    "ar": "مقياس مستقل"
+  },
+  "disclaimer": {
+    "en": "A reflection tool from traditional teachings — it does not replace faith, free will, or wise counsel.",
+    "fr": "Un outil de réflexion des enseignements traditionnels — il ne remplace ni la foi, ni le libre arbitre, ni le conseil avisé.",
+    "ar": "أداة تأمل من التعاليم التقليدية — لا تُغني عن الإيمان أو الإرادة الحرة أو المشورة الحكيمة."
+  },
+  "blocks": {
+    "meaning": {
+      "en": "Meaning",
+      "fr": "Signification",
+      "ar": "المعنى"
+    },
+    "marriageOutlook": {
+      "en": "Marriage Outlook",
+      "fr": "Perspective du Mariage",
+      "ar": "نظرة على الزواج"
+    },
+    "watchOut": {
+      "en": "Watch Out",
+      "fr": "Attention",
+      "ar": "احذر من"
+    },
+    "keyToSuccess": {
+      "en": "Key to Success",
+      "fr": "Clé du Succès",
+      "ar": "مفتاح النجاح"
+    }
+  },
+  "howCalculated": {
+    "title": {
+      "en": "How this number is calculated",
+      "fr": "Comment ce nombre est calculé",
+      "ar": "كيف يُحسب هذا الرقم"
+    },
+    "constant": {
+      "en": "Constant",
+      "fr": "Constante",
+      "ar": "الثابت"
+    },
+    "explanation": {
+      "en": "We add the two name values, add 7, then reduce to a number 1–9.",
+      "fr": "Nous additionnons les deux valeurs de noms, ajoutons 7, puis réduisons à un nombre 1–9.",
+      "ar": "نجمع قيمتي الاسمين، ونضيف 7، ثم نختزل الناتج إلى رقم بين 1 و9."
+    }
+  },
+  "archetypes": {
+    "1": {
+      "title": {
+        "en": "The Grounded Path",
+        "fr": "Le Chemin Ancré",
+        "ar": "المسار الراسخ"
+      },
+      "oneLine": {
+        "en": "May start easy; later can feel stagnant",
+        "fr": "Peut commencer facilement ; plus tard peut sembler stagnant",
+        "ar": "قد يبدأ سهلًا؛ لاحقًا قد يشعر بالركود"
+      },
+      "meaning": {
+        "en": "This pattern traditionally shows an easy beginning that may later feel stagnant, especially in growth and provision. Emotional connection can cool over time if not actively tended.",
+        "fr": "Ce motif montre traditionnellement un début facile qui peut plus tard sembler stagnant, surtout en croissance et provision. Le lien émotionnel peut se refroidir avec le temps s'il n'est pas activement entretenu.",
+        "ar": "يُظهر هذا النمط تقليديًا بداية سهلة قد تشعر لاحقًا بالركود، خاصة في النمو والرزق. قد يبرد الاتصال العاطفي مع الوقت إن لم يُعتنَ به بفعالية."
+      },
+      "marriageOutlook": {
+        "en": "Marriage may start smoothly but requires intentional renewal to avoid complacency. Focus on shared goals and gratitude practices.",
+        "fr": "Le mariage peut commencer en douceur mais nécessite un renouvellement intentionnel pour éviter la complaisance. Concentrez-vous sur des objectifs partagés et des pratiques de gratitude.",
+        "ar": "قد يبدأ الزواج بسلاسة لكنه يتطلب تجديدًا مقصودًا لتجنب الرضا الزائد. ركّزا على الأهداف المشتركة وممارسات الامتنان."
+      },
+      "watchOut": {
+        "en": "Emotional coldness and taking each other for granted. Growth in provision may slow without conscious effort.",
+        "fr": "Froideur émotionnelle et tenir l'autre pour acquis. La croissance en provision peut ralentir sans effort conscient.",
+        "ar": "البرود العاطفي واعتياد أحدكما على الآخر. قد يتباطأ النمو في الرزق دون جهد واعٍ."
+      },
+      "keyToSuccess": {
+        "en": "Shared spiritual goals, regular renewal practices, gratitude, and acts of charity (sadaqah) together.",
+        "fr": "Objectifs spirituels partagés, pratiques de renouvellement régulières, gratitude et actes de charité (sadaqah) ensemble.",
+        "ar": "أهداف روحية مشتركة، ممارسات تجديد منتظمة، الامتنان، وأعمال الصدقة معًا."
+      }
+    },
+    "2": {
+      "title": {
+        "en": "The Harmonious Bond",
+        "fr": "Le Lien Harmonieux",
+        "ar": "الرابطة المنسجمة"
+      },
+      "oneLine": {
+        "en": "Traditionally good for cooperation",
+        "fr": "Traditionnellement bon pour la coopération",
+        "ar": "جيد تقليديًا للتعاون"
+      },
+      "meaning": {
+        "en": "Traditionally considered favorable for marriage. This pattern supports natural cooperation, companionship, and mutual understanding. Balance flows more easily than opposition.",
+        "fr": "Traditionnellement considéré comme favorable au mariage. Ce motif soutient la coopération naturelle, la camaraderie et la compréhension mutuelle. L'équilibre coule plus facilement que l'opposition.",
+        "ar": "يُعتبر تقليديًا مؤاتيًا للزواج. يدعم هذا النمط التعاون الطبيعي والرفقة والتفاهم المتبادل. يتدفق التوازن بسهولة أكبر من التعارض."
+      },
+      "marriageOutlook": {
+        "en": "Marriage is traditionally supported. Companionship and teamwork are natural strengths. Guard against dependency.",
+        "fr": "Le mariage est traditionnellement soutenu. La camaraderie et le travail d'équipe sont des forces naturelles. Gardez-vous contre la dépendance.",
+        "ar": "الزواج مدعوم تقليديًا. الرفقة والعمل الجماعي قوتان طبيعيتان. احذرا من الاعتماد الزائد."
+      },
+      "watchOut": {
+        "en": "Over-dependency and avoiding difficult conversations. One partner may lean too heavily on the other.",
+        "fr": "Sur-dépendance et éviter les conversations difficiles. Un partenaire peut trop s'appuyer sur l'autre.",
+        "ar": "الاعتماد المفرط وتجنّب المحادثات الصعبة. قد يتّكئ أحد الطرفين بشدة على الآخر."
+      },
+      "keyToSuccess": {
+        "en": "Clear communication, shared responsibility, and maintaining individual growth alongside partnership.",
+        "fr": "Communication claire, responsabilité partagée et maintien de la croissance individuelle aux côtés du partenariat.",
+        "ar": "تواصل واضح، مسؤولية مشتركة، والحفاظ على النمو الفردي جنبًا إلى جنب مع الشراكة."
+      }
+    },
+    "3": {
+      "title": {
+        "en": "The Friction Path",
+        "fr": "Le Chemin de Friction",
+        "ar": "مسار الاحتكاك"
+      },
+      "oneLine": {
+        "en": "Often difficult; tension and strain",
+        "fr": "Souvent difficile ; tension et pression",
+        "ar": "غالبًا ما يكون صعبًا؛ توتر وإجهاد"
+      },
+      "meaning": {
+        "en": "This pattern is traditionally associated with difficulty. Tension, frequent disagreements, and financial pressure may arise. Requires significant patience and discipline.",
+        "fr": "Ce motif est traditionnellement associé à la difficulté. Des tensions, des désaccords fréquents et des pressions financières peuvent surgir. Nécessite une patience et une discipline significatives.",
+        "ar": "يرتبط هذا النمط تقليديًا بالصعوبة. قد ينشأ التوتر والخلافات المتكررة والضغط المالي. يتطلب صبرًا وانضباطًا كبيرين."
+      },
+      "marriageOutlook": {
+        "en": "Marriage may face continuous challenges. Strain in provision and emotional harmony often requires outside support and spiritual discipline.",
+        "fr": "Le mariage peut faire face à des défis continus. La pression en provision et harmonie émotionnelle nécessite souvent un soutien extérieur et une discipline spirituelle.",
+        "ar": "قد يواجه الزواج تحديات مستمرة. يتطلب الإجهاد في الرزق والانسجام العاطفي غالبًا دعمًا خارجيًا وانضباطًا روحيًا."
+      },
+      "watchOut": {
+        "en": "Constant arguments, financial instability, and emotional burnout. This path tests endurance.",
+        "fr": "Arguments constants, instabilité financière et épuisement émotionnel. Ce chemin teste l'endurance.",
+        "ar": "المشاجرات المستمرة وعدم الاستقرار المالي والإرهاق العاطفي. يختبر هذا المسار التحمل."
+      },
+      "keyToSuccess": {
+        "en": "Patience (sabr), structured routines, spiritual discipline, and wise counsel from trusted elders.",
+        "fr": "Patience (sabr), routines structurées, discipline spirituelle et conseil sage d'aînés de confiance.",
+        "ar": "الصبر، الروتين المنظم، الانضباط الروحي، والمشورة الحكيمة من الكبار الموثوقين."
+      }
+    },
+    "4": {
+      "title": {
+        "en": "The Burdened Path",
+        "fr": "Le Chemin Chargé",
+        "ar": "المسار المُثقَل"
+      },
+      "oneLine": {
+        "en": "Heavy trials; health and strain",
+        "fr": "Épreuves lourdes ; santé et pression",
+        "ar": "ابتلاءات ثقيلة؛ صحة وإجهاد"
+      },
+      "meaning": {
+        "en": "Traditionally seen as a heavy path. Health concerns, emotional strain, and a sense of burden may be present, especially if one partner has unresolved emotional patterns.",
+        "fr": "Traditionnellement vu comme un chemin lourd. Des préoccupations de santé, une pression émotionnelle et un sens de fardeau peuvent être présents, surtout si un partenaire a des schémas émotionnels non résolus.",
+        "ar": "يُنظر إليه تقليديًا كمسار ثقيل. قد تحضر مخاوف صحية وإجهاد عاطفي وشعور بالعبء، خاصة إذا كان لدى أحد الطرفين أنماط عاطفية غير محلولة."
+      },
+      "marriageOutlook": {
+        "en": "Marriage may feel like a test. Health (physical or emotional) often becomes a central concern. Requires emotional maturity and calm.",
+        "fr": "Le mariage peut sembler une épreuve. La santé (physique ou émotionnelle) devient souvent une préoccupation centrale. Nécessite maturité émotionnelle et calme.",
+        "ar": "قد يشعر الزواج كأنه اختبار. غالبًا ما تصبح الصحة (الجسدية أو العاطفية) مصدر قلق مركزي. يتطلب نضجًا عاطفيًا وهدوءًا."
+      },
+      "watchOut": {
+        "en": "Burnout, neglecting physical or mental wellbeing, and resentment building from unspoken burdens.",
+        "fr": "Épuisement, négligence du bien-être physique ou mental, et ressentiment accumulé par des fardeaux non exprimés.",
+        "ar": "الإرهاق، وإهمال العافية الجسدية أو النفسية، وتراكم الاستياء من الأعباء غير المعلَنة."
+      },
+      "keyToSuccess": {
+        "en": "Focus on health (physical and emotional), emotional maturity, calm daily routines, and seeking therapeutic support when needed.",
+        "fr": "Se concentrer sur la santé (physique et émotionnelle), maturité émotionnelle, routines quotidiennes calmes et rechercher un soutien thérapeutique si nécessaire.",
+        "ar": "التركيز على الصحة (الجسدية والعاطفية)، النضج العاطفي، الروتين الهادئ اليومي، وطلب الدعم العلاجي عند الحاجة."
+      }
+    },
+    "5": {
+      "title": {
+        "en": "The Blessed Path",
+        "fr": "Le Chemin Béni",
+        "ar": "المسار المبارك"
+      },
+      "oneLine": {
+        "en": "Traditionally blessed; harmony and growth",
+        "fr": "Traditionnellement béni ; harmonie et croissance",
+        "ar": "مبارك تقليديًا؛ انسجام ونمو"
+      },
+      "meaning": {
+        "en": "Traditionally considered very favorable. Associated with blessing, natural harmony, children, and spiritual growth. Balance and abundance may flow more easily.",
+        "fr": "Traditionnellement considéré comme très favorable. Associé à la bénédiction, l'harmonie naturelle, les enfants et la croissance spirituelle. L'équilibre et l'abondance peuvent couler plus facilement.",
+        "ar": "يُعتبر تقليديًا مؤاتيًا جدًا. يرتبط بالبركة والانسجام الطبيعي والأبناء والنمو الروحي. قد يتدفق التوازن والوفرة بسهولة أكبر."
+      },
+      "marriageOutlook": {
+        "en": "Marriage is traditionally blessed. Harmony, children, and shared spiritual life are often supported. Guard against excess and distraction.",
+        "fr": "Le mariage est traditionnellement béni. L'harmonie, les enfants et la vie spirituelle partagée sont souvent soutenus. Gardez-vous contre l'excès et la distraction.",
+        "ar": "الزواج مبارك تقليديًا. غالبًا ما تكون مدعومة السعادة الأسرية والأبناء والحياة الروحية المشتركة. احذرا من الإفراط والتشتت."
+      },
+      "watchOut": {
+        "en": "Distraction from blessings, excess in comfort, and taking abundance for granted.",
+        "fr": "Distraction des bénédictions, excès dans le confort et tenir l'abondance pour acquise.",
+        "ar": "التشتت عن البركات، الإفراط في الراحة، واعتياد الوفرة."
+      },
+      "keyToSuccess": {
+        "en": "Gratitude practices, structured spiritual life together, and using blessings to support others.",
+        "fr": "Pratiques de gratitude, vie spirituelle structurée ensemble et utiliser les bénédictions pour soutenir les autres.",
+        "ar": "ممارسات الامتنان، حياة روحية منظمة معًا، واستخدام البركات لدعم الآخرين."
+      }
+    },
+    "6": {
+      "title": {
+        "en": "The Trial Path",
+        "fr": "Le Chemin d'Épreuve",
+        "ar": "مسار الابتلاء"
+      },
+      "oneLine": {
+        "en": "Quarrels and ego tests",
+        "fr": "Querelles et tests d'ego",
+        "ar": "مشاجرات واختبارات للأنا"
+      },
+      "meaning": {
+        "en": "This pattern traditionally shows recurring quarrels and discord. Tests of anger, pride, and ego are common. Patterns may repeat until inner work is done.",
+        "fr": "Ce motif montre traditionnellement des querelles récurrentes et de la discorde. Des tests de colère, d'orgueil et d'ego sont courants. Les schémas peuvent se répéter jusqu'à ce que le travail intérieur soit fait.",
+        "ar": "يُظهر هذا النمط تقليديًا مشاجرات ونزاعات متكررة. اختبارات الغضب والكبرياء والأنا شائعة. قد تتكرر الأنماط حتى يتم إنجاز العمل الداخلي."
+      },
+      "marriageOutlook": {
+        "en": "Marriage often involves power struggles and repeated conflicts. Both partners must work on self-awareness and forgiveness.",
+        "fr": "Le mariage implique souvent des luttes de pouvoir et des conflits répétés. Les deux partenaires doivent travailler sur la conscience de soi et le pardon.",
+        "ar": "غالبًا ما يتضمن الزواج صراعات على السلطة ونزاعات متكررة. يجب على كلا الطرفين العمل على الوعي الذاتي والمسامحة."
+      },
+      "watchOut": {
+        "en": "Power struggles, recurring arguments, and cycles of blame. Pride and unresolved anger amplify friction.",
+        "fr": "Luttes de pouvoir, arguments récurrents et cycles de blâme. L'orgueil et la colère non résolue amplifient la friction.",
+        "ar": "صراعات السلطة، المشاجرات المتكررة، ودورات اللوم. الكبرياء والغضب غير المحلول يضخمان الاحتكاك."
+      },
+      "keyToSuccess": {
+        "en": "Conflict resolution skills, self-work (especially anger and ego), forgiveness practices, and regular spiritual remembrance (dhikr).",
+        "fr": "Compétences en résolution de conflits, travail sur soi (surtout colère et ego), pratiques de pardon et rappel spirituel régulier (dhikr).",
+        "ar": "مهارات حل النزاع، العمل الذاتي (خاصة الغضب والأنا)، ممارسات المسامحة، والذكر الروحي المنتظم."
+      }
+    },
+    "7": {
+      "title": {
+        "en": "The Chosen Path",
+        "fr": "Le Chemin Choisi",
+        "ar": "المسار المختار"
+      },
+      "oneLine": {
+        "en": "Traditionally best; blessings after obstacles",
+        "fr": "Traditionnellement le meilleur ; bénédictions après obstacles",
+        "ar": "الأفضل تقليديًا؛ بركات بعد العقبات"
+      },
+      "meaning": {
+        "en": "Traditionally considered the most favorable for marriage. May face obstacles before union, but strong blessings and alignment often follow. Spiritual harmony is deep.",
+        "fr": "Traditionnellement considéré comme le plus favorable au mariage. Peut faire face à des obstacles avant l'union, mais de fortes bénédictions et un alignement suivent souvent. L'harmonie spirituelle est profonde.",
+        "ar": "يُعتبر تقليديًا الأكثر مؤاتاة للزواج. قد يواجه عقبات قبل الاتحاد، لكن غالبًا ما تتبع بركات قوية وتوافق. الانسجام الروحي عميق."
+      },
+      "marriageOutlook": {
+        "en": "Marriage is traditionally highly blessed. Challenges before union often make the bond stronger. This path carries spiritual favor.",
+        "fr": "Le mariage est traditionnellement très béni. Les défis avant l'union renforcent souvent le lien. Ce chemin porte une faveur spirituelle.",
+        "ar": "الزواج مبارك جدًا تقليديًا. غالبًا ما تجعل التحديات قبل الاتحاد الرابطة أقوى. يحمل هذا المسار حظوة روحية."
+      },
+      "watchOut": {
+        "en": "Pride in the blessing, external interference before union, and assuming ease means no effort is needed.",
+        "fr": "Orgueil dans la bénédiction, interférence externe avant l'union et supposer que la facilité signifie qu'aucun effort n'est nécessaire.",
+        "ar": "الكبرياء بالبركة، التدخل الخارجي قبل الاتحاد، وافتراض أن السهولة تعني عدم الحاجة للجهد."
+      },
+      "keyToSuccess": {
+        "en": "Humility, trust in divine timing, gratitude, and alignment in spiritual values.",
+        "fr": "Humilité, confiance dans le timing divin, gratitude et alignement dans les valeurs spirituelles.",
+        "ar": "التواضع، الثقة بالتوقيت الإلهي، الامتنان، والتوافق في القيم الروحية."
+      }
+    },
+    "8": {
+      "title": {
+        "en": "The Path of Patience",
+        "fr": "Le Chemin de Patience",
+        "ar": "مسار الصبر"
+      },
+      "oneLine": {
+        "en": "Very good long-term; early struggles",
+        "fr": "Très bon à long terme ; luttes initiales",
+        "ar": "جيد جدًا على المدى الطويل؛ صراعات مبكرة"
+      },
+      "meaning": {
+        "en": "This pattern is traditionally very good for the long term, but early misunderstandings are common. Patience (sabr) transforms this into a strong, enduring bond.",
+        "fr": "Ce motif est traditionnellement très bon à long terme, mais les malentendus précoces sont courants. La patience (sabr) transforme cela en un lien fort et durable.",
+        "ar": "هذا النمط جيد جدًا تقليديًا على المدى الطويل، لكن سوء الفهم المبكر شائع. يحوّل الصبر هذا إلى رابطة قوية ودائمة."
+      },
+      "marriageOutlook": {
+        "en": "Marriage starts with confusion or misjudgment but becomes very strong over time. Patience is the key to unlocking this bond's strength.",
+        "fr": "Le mariage commence avec confusion ou mauvais jugement mais devient très fort avec le temps. La patience est la clé pour déverrouiller la force de ce lien.",
+        "ar": "يبدأ الزواج بارتباك أو سوء تقدير لكنه يصبح قويًا جدًا مع الوقت. الصبر هو المفتاح لفتح قوة هذه الرابطة."
+      },
+      "watchOut": {
+        "en": "Judging the relationship too quickly in the beginning. Early friction may cause premature endings.",
+        "fr": "Juger la relation trop rapidement au début. La friction précoce peut causer des fins prématurées.",
+        "ar": "الحكم على العلاقة بسرعة زائدة في البداية. قد يسبب الاحتكاك المبكر نهايات سابقة لأوانها."
+      },
+      "keyToSuccess": {
+        "en": "Patience (sabr), emotional intelligence, gentle communication, and giving time for mutual understanding to deepen.",
+        "fr": "Patience (sabr), intelligence émotionnelle, communication douce et donner du temps pour que la compréhension mutuelle s'approfondisse.",
+        "ar": "الصبر، الذكاء العاطفي، التواصل اللطيف، وإعطاء الوقت لتعميق التفاهم المتبادل."
+      }
+    },
+    "9": {
+      "title": {
+        "en": "The Severed Path",
+        "fr": "Le Chemin Rompu",
+        "ar": "المسار المنقطع"
+      },
+      "oneLine": {
+        "en": "Traditionally warned against",
+        "fr": "Traditionnellement déconseillé",
+        "ar": "يُحذَّر منه تقليديًا"
+      },
+      "meaning": {
+        "en": "Traditionally warned against for binding marriage. Associated with severe hardship, sudden breaks, and recurring harm patterns. Requires extreme caution and guidance.",
+        "fr": "Traditionnellement déconseillé pour le mariage contraignant. Associé à des difficultés sévères, des ruptures soudaines et des schémas de préjudice récurrents. Nécessite une extrême prudence et des conseils.",
+        "ar": "يُحذَّر منه تقليديًا لربط الزواج. يرتبط بمشقة شديدة وانقطاعات مفاجئة وأنماط أذى متكررة. يتطلب حذرًا شديدًا وإرشادًا."
+      },
+      "marriageOutlook": {
+        "en": "Marriage is traditionally discouraged under this pattern. If already in this bond, increase spiritual protection practices and seek wise counsel.",
+        "fr": "Le mariage est traditionnellement découragé sous ce motif. Si déjà dans ce lien, augmentez les pratiques de protection spirituelle et cherchez un conseil avisé.",
+        "ar": "يُثبَّط الزواج تقليديًا وفق هذا النمط. إذا كنتما بالفعل في هذه الرابطة، زيدا من ممارسات الحماية الروحية واطلبا مشورة حكيمة."
+      },
+      "watchOut": {
+        "en": "Sudden separations, recurring harm cycles, and patterns that repeat despite efforts. This path requires vigilance.",
+        "fr": "Séparations soudaines, cycles de préjudice récurrents et schémas qui se répètent malgré les efforts. Ce chemin nécessite vigilance.",
+        "ar": "الانفصالات المفاجئة، دورات الأذى المتكررة، والأنماط التي تتكرر رغم الجهد. يتطلب هذا المسار يقظة."
+      },
+      "keyToSuccess": {
+        "en": "Do not panic if this appears. Seek counsel from trusted spiritual guides. If already bound, increase protection practices (duʿāʾ, charity, guidance). Avoid fatalistic thinking — free will and divine mercy remain.",
+        "fr": "Ne paniquez pas si cela apparaît. Cherchez conseil auprès de guides spirituels de confiance. Si déjà lié, augmentez les pratiques de protection (duʿāʾ, charité, conseil). Évitez la pensée fataliste — le libre arbitre et la miséricorde divine demeurent.",
+        "ar": "لا تفزعا إن ظهر هذا. اطلبا المشورة من مرشدين روحيين موثوقين. إن كنتما مرتبطين بالفعل، زيدا من ممارسات الحماية (الدعاء، الصدقة، الإرشاد). تجنبا التفكير القدري السلبي — الإرادة الحرة والرحمة الإلهية باقيتان."
+      }
+    },
+    "fallback": {
+      "title": {
+        "en": "Soul Connection",
+        "fr": "Connexion d'Âme",
+        "ar": "الارتباط الروحي"
+      },
+      "oneLine": {
+        "en": "Spiritual resonance pattern",
+        "fr": "Motif de résonance spirituelle",
+        "ar": "نمط رنين روحي"
+      },
+      "meaning": {
+        "en": "This reflects the underlying spiritual resonance between the two names.",
+        "fr": "Cela reflète la résonance spirituelle sous-jacente entre les deux noms.",
+        "ar": "يعكس هذا الرنين الروحي الكامن بين الاسمين."
+      },
+      "marriageOutlook": {
+        "en": "Every path has its lessons. Approach with wisdom and patience.",
+        "fr": "Chaque chemin a ses leçons. Approchez avec sagesse et patience.",
+        "ar": "لكل مسار دروسه. تعامل معه بحكمة وصبر."
+      },
+      "watchOut": {
+        "en": "General caution and awareness in all relationships.",
+        "fr": "Prudence générale et conscience dans toutes les relations.",
+        "ar": "حذر ووعي عام في جميع العلاقات."
+      },
+      "keyToSuccess": {
+        "en": "Seek wise counsel, maintain spiritual practices, and honor free will.",
+        "fr": "Cherchez un conseil avisé, maintenez des pratiques spirituelles et honorez le libre arbitre.",
+        "ar": "اطلب مشورة حكيمة، حافظ على الممارسات الروحية، واحترم الإرادة الحرة."
+      }
+    }
+  },
+  "tags": {
+    "grounded": {
+      "en": "Grounded",
+      "fr": "Ancré",
+      "ar": "راسخ"
+    },
+    "stability": {
+      "en": "Stability",
+      "fr": "Stabilité",
+      "ar": "استقرار"
+    },
+    "renewal": {
+      "en": "Renewal",
+      "fr": "Renouvellement",
+      "ar": "تجديد"
+    },
+    "harmony": {
+      "en": "Harmony",
+      "fr": "Harmonie",
+      "ar": "انسجام"
+    },
+    "cooperation": {
+      "en": "Cooperation",
+      "fr": "Coopération",
+      "ar": "تعاون"
+    },
+    "companionship": {
+      "en": "Companionship",
+      "fr": "Camaraderie",
+      "ar": "رفقة"
+    },
+    "friction": {
+      "en": "Friction",
+      "fr": "Friction",
+      "ar": "احتكاك"
+    },
+    "patience": {
+      "en": "Patience",
+      "fr": "Patience",
+      "ar": "صبر"
+    },
+    "discipline": {
+      "en": "Discipline",
+      "fr": "Discipline",
+      "ar": "انضباط"
+    },
+    "burden": {
+      "en": "Burden",
+      "fr": "Fardeau",
+      "ar": "عبء"
+    },
+    "health": {
+      "en": "Health",
+      "fr": "Santé",
+      "ar": "صحة"
+    },
+    "maturity": {
+      "en": "Maturity",
+      "fr": "Maturité",
+      "ar": "نضج"
+    },
+    "blessed": {
+      "en": "Blessed",
+      "fr": "Béni",
+      "ar": "مبارك"
+    },
+    "growth": {
+      "en": "Growth",
+      "fr": "Croissance",
+      "ar": "نمو"
+    },
+    "gratitude": {
+      "en": "Gratitude",
+      "fr": "Gratitude",
+      "ar": "امتنان"
+    },
+    "trial": {
+      "en": "Trial",
+      "fr": "Épreuve",
+      "ar": "ابتلاء"
+    },
+    "forgiveness": {
+      "en": "Forgiveness",
+      "fr": "Pardon",
+      "ar": "مسامحة"
+    },
+    "selfWork": {
+      "en": "Self-work",
+      "fr": "Travail sur soi",
+      "ar": "عمل ذاتي"
+    },
+    "chosen": {
+      "en": "Chosen",
+      "fr": "Choisi",
+      "ar": "مختار"
+    },
+    "alignment": {
+      "en": "Alignment",
+      "fr": "Alignement",
+      "ar": "توافق"
+    },
+    "longTerm": {
+      "en": "Long-term",
+      "fr": "Long terme",
+      "ar": "طويل الأمد"
+    },
+    "wisdom": {
+      "en": "Wisdom",
+      "fr": "Sagesse",
+      "ar": "حكمة"
+    },
+    "caution": {
+      "en": "Caution",
+      "fr": "Prudence",
+      "ar": "حذر"
+    },
+    "guidance": {
+      "en": "Guidance",
+      "fr": "Conseil",
+      "ar": "إرشاد"
+    },
+    "protection": {
+      "en": "Protection",
+      "fr": "Protection",
+      "ar": "حماية"
+    },
+    "reflection": {
+      "en": "Reflection",
+      "fr": "Réflexion",
+      "ar": "تأمل"
+    }
+  },
+  "glimpse": {
+    "fallback": {
+      "en": "Spiritual connection pattern",
+      "fr": "Motif de connexion spirituelle",
+      "ar": "نمط اتصال روحي"
+    },
+    "universal": {
+      "1": {
+        "en": "Easy start; growth can slow",
+        "fr": "Début facile ; croissance peut ralentir",
+        "ar": "بداية سهلة؛ قد يتباطأ النمو"
+      },
+      "2": {
+        "en": "Generally smooth and supportive",
+        "fr": "Généralement fluide et soutenant",
+        "ar": "سلس وداعم عمومًا"
+      },
+      "3": {
+        "en": "Friction likely; needs patience",
+        "fr": "Friction probable ; patience requise",
+        "ar": "احتكاك محتمل؛ يحتاج صبرًا"
+      },
+      "4": {
+        "en": "Heavy feel; requires care",
+        "fr": "Sensation lourde ; soins nécessaires",
+        "ar": "شعور ثقيل؛ يتطلب عناية"
+      },
+      "5": {
+        "en": "Blessed flow; harmony grows",
+        "fr": "Flux béni ; harmonie grandit",
+        "ar": "تدفق مبارك؛ ينمو الانسجام"
+      },
+      "6": {
+        "en": "Quarrels possible; set boundaries",
+        "fr": "Querelles possibles ; limites claires",
+        "ar": "مشاجرات محتملة؛ ضعا حدودًا"
+      },
+      "7": {
+        "en": "Best long-term; tested first",
+        "fr": "Meilleur long terme ; testé d'abord",
+        "ar": "الأفضل على المدى الطويل؛ يُختبر أولًا"
+      },
+      "8": {
+        "en": "Deep bond; clarity with time",
+        "fr": "Lien profond ; clarté avec le temps",
+        "ar": "رابطة عميقة؛ وضوح مع الوقت"
+      },
+      "9": {
+        "en": "Unstable match; avoid rushing",
+        "fr": "Correspondance instable ; éviter précipitation",
+        "ar": "توافق غير مستقر؛ تجنبا التسرع"
+      }
+    },
+    "friendship": {
+      "1": {
+        "en": "Starts well; may become distant",
+        "fr": "Commence bien ; peut devenir distant",
+        "ar": "يبدأ جيدًا؛ قد يصبح بعيدًا"
+      },
+      "2": {
+        "en": "Good friendship; mutual support",
+        "fr": "Bonne amitié ; soutien mutuel",
+        "ar": "صداقة جيدة؛ دعم متبادل"
+      },
+      "3": {
+        "en": "Ego clashes; keep it light",
+        "fr": "Clash d'ego ; garder léger",
+        "ar": "صدامات الأنا؛ أبقياها خفيفة"
+      },
+      "4": {
+        "en": "Can feel heavy; be gentle",
+        "fr": "Peut sembler lourd ; être doux",
+        "ar": "قد يشعر بالثقل؛ كونا لطيفين"
+      },
+      "5": {
+        "en": "Warm bond; grows over time",
+        "fr": "Lien chaleureux ; grandit avec temps",
+        "ar": "رابطة دافئة؛ تنمو مع الوقت"
+      },
+      "6": {
+        "en": "Arguments possible; respect limits",
+        "fr": "Arguments possibles ; respecter limites",
+        "ar": "خلافات محتملة؛ احترما الحدود"
+      },
+      "7": {
+        "en": "Loyal bond after early tests",
+        "fr": "Lien loyal après tests précoces",
+        "ar": "رابطة وفية بعد اختبارات مبكرة"
+      },
+      "8": {
+        "en": "Strong link; avoid assumptions",
+        "fr": "Lien fort ; éviter suppositions",
+        "ar": "رابطة قوية؛ تجنبا الافتراضات"
+      },
+      "9": {
+        "en": "On-off dynamic; protect peace",
+        "fr": "Dynamique on-off ; protéger paix",
+        "ar": "ديناميكية متذبذبة؛ احميا السلام"
+      }
+    },
+    "family": {
+      "1": {
+        "en": "Closeness early; effort needed",
+        "fr": "Proximité précoce ; effort nécessaire",
+        "ar": "قرب مبكر؛ يحتاج جهدًا"
+      },
+      "2": {
+        "en": "Supportive ties; good harmony",
+        "fr": "Liens soutenants ; bonne harmonie",
+        "ar": "روابط داعمة؛ انسجام جيد"
+      },
+      "3": {
+        "en": "Sensitive triggers; speak gently",
+        "fr": "Déclencheurs sensibles ; parler doucement",
+        "ar": "نقاط حساسة؛ تحدثا بلطف"
+      },
+      "4": {
+        "en": "Burdened feel; patience required",
+        "fr": "Sensation de fardeau ; patience requise",
+        "ar": "شعور بالعبء؛ الصبر مطلوب"
+      },
+      "5": {
+        "en": "Mercy and ease; bond strengthens",
+        "fr": "Miséricorde et facilité ; lien renforce",
+        "ar": "رحمة وسهولة؛ تقوى الرابطة"
+      },
+      "6": {
+        "en": "Tension cycles; keep respect",
+        "fr": "Cycles de tension ; garder respect",
+        "ar": "دورات توتر؛ حافظا على الاحترام"
+      },
+      "7": {
+        "en": "Respect grows through duty",
+        "fr": "Respect grandit par devoir",
+        "ar": "يزداد الاحترام عبر الواجب"
+      },
+      "8": {
+        "en": "Close bond; heal misunderstandings",
+        "fr": "Lien proche ; guérir malentendus",
+        "ar": "رابطة وثيقة؛ اشفيا سوء التفاهم"
+      },
+      "9": {
+        "en": "Distance cycles; keep boundaries",
+        "fr": "Cycles de distance ; garder limites",
+        "ar": "دورات بُعد؛ حافظا على الحدود"
+      }
+    },
+    "work": {
+      "1": {
+        "en": "Good start; progress may stall",
+        "fr": "Bon départ ; progrès peut stagner",
+        "ar": "بداية جيدة؛ قد يتوقف التقدم"
+      },
+      "2": {
+        "en": "Works well; reliable teamwork",
+        "fr": "Fonctionne bien ; travail d'équipe fiable",
+        "ar": "يعمل جيدًا؛ عمل جماعي موثوق"
+      },
+      "3": {
+        "en": "Conflict risk; clarify roles",
+        "fr": "Risque de conflit ; clarifier rôles",
+        "ar": "خطر النزاع؛ وضّحا الأدوار"
+      },
+      "4": {
+        "en": "Slow and heavy; needs structure",
+        "fr": "Lent et lourd ; structure nécessaire",
+        "ar": "بطيء وثقيل؛ يحتاج بنية"
+      },
+      "5": {
+        "en": "Productive flow; shared wins",
+        "fr": "Flux productif ; victoires partagées",
+        "ar": "تدفق منتج؛ انتصارات مشتركة"
+      },
+      "6": {
+        "en": "Disputes possible; set process",
+        "fr": "Disputes possibles ; définir processus",
+        "ar": "نزاعات محتملة؛ ضعا إجراءً"
+      },
+      "7": {
+        "en": "Strong team once roles clear",
+        "fr": "Équipe forte une fois rôles clairs",
+        "ar": "فريق قوي بعد وضوح الأدوار"
+      },
+      "8": {
+        "en": "High potential; align expectations",
+        "fr": "Haut potentiel ; aligner attentes",
+        "ar": "إمكانية عالية؛ وائما التوقعات"
+      },
+      "9": {
+        "en": "Volatile pairing; firm rules",
+        "fr": "Appariement volatile ; règles fermes",
+        "ar": "شراكة متقلبة؛ قواعد صارمة"
+      }
+    }
+  },
+  "meanings": {
+    "universal": {
+      "1": {
+        "short": {
+          "en": "Stable foundation with renewal needs",
+          "fr": "Fondation stable avec besoins de renouvellement",
+          "ar": "أساس مستقر مع حاجة للتجديد"
+        },
+        "meaning": {
+          "en": "This connection often starts strong and feels steady. Over time, it may require conscious renewal to prevent stagnation. The bond tends to be grounded but can feel routine without active effort.",
+          "fr": "Cette connexion commence souvent forte et se sent stable. Avec le temps, elle peut nécessiter un renouvellement conscient pour éviter la stagnation. Le lien tend à être ancré mais peut sembler routinier sans effort actif.",
+          "ar": "غالبًا ما يبدأ هذا الارتباط قويًا ويشعر بالثبات. مع الوقت، قد يتطلب تجديدًا واعيًا لمنع الركود. تميل الرابطة إلى الرسوخ لكنها قد تشعر بالروتين دون جهد فعال."
+        },
+        "watchOut": {
+          "en": "Taking the connection for granted or letting it become purely transactional. Energy may plateau if not refreshed.",
+          "fr": "Tenir la connexion pour acquise ou la laisser devenir purement transactionnelle. L'énergie peut plafonner si non rafraîchie.",
+          "ar": "اعتياد الرابطة أو تحولها إلى تعاملية بحتة. قد تصل الطاقة لهضبة إن لم تُجدَّد."
+        },
+        "keyToSuccess": {
+          "en": "Regular check-ins, shared goals, and intentional renewal practices. Gratitude and active appreciation keep this bond alive.",
+          "fr": "Vérifications régulières, objectifs partagés et pratiques de renouvellement intentionnelles. La gratitude et l'appréciation active maintiennent ce lien vivant.",
+          "ar": "تفقّد منتظم، أهداف مشتركة، وممارسات تجديد مقصودة. الامتنان والتقدير الفعّال يبقيان هذه الرابطة حية."
+        }
+      },
+      "2": {
+        "short": {
+          "en": "Natural harmony and mutual support",
+          "fr": "Harmonie naturelle et soutien mutuel",
+          "ar": "انسجام طبيعي ودعم متبادل"
+        },
+        "meaning": {
+          "en": "This pattern supports balance and cooperation. People in this connection often understand each other naturally and work well together. Mutual respect tends to flow easily.",
+          "fr": "Ce motif soutient l'équilibre et la coopération. Les personnes dans cette connexion se comprennent souvent naturellement et travaillent bien ensemble. Le respect mutuel tend à couler facilement.",
+          "ar": "يدعم هذا النمط التوازن والتعاون. غالبًا ما يفهم من في هذا الارتباط بعضهم طبيعيًا ويعملون معًا جيدًا. يتدفق الاحترام المتبادل بسهولة."
+        },
+        "watchOut": {
+          "en": "Over-reliance on the other person or avoiding necessary conflict. Balance can become dependency if not monitored.",
+          "fr": "Sur-dépendance envers l'autre personne ou éviter les conflits nécessaires. L'équilibre peut devenir dépendance s'il n'est pas surveillé.",
+          "ar": "الاعتماد المفرط على الآخر أو تجنّب النزاع الضروري. قد يتحول التوازن إلى اعتماد إن لم يُراقَب."
+        },
+        "keyToSuccess": {
+          "en": "Maintain individual strength while cherishing the bond. Healthy boundaries and honest communication sustain this harmony.",
+          "fr": "Maintenir la force individuelle tout en chérissant le lien. Des limites saines et une communication honnête soutiennent cette harmonie.",
+          "ar": "حافظا على القوة الفردية مع الاعتزاز بالرابطة. الحدود الصحية والتواصل الصادق يديمان هذا الانسجام."
+        }
+      },
+      "3": {
+        "short": {
+          "en": "Friction and growth through challenge",
+          "fr": "Friction et croissance par le défi",
+          "ar": "احتكاك ونمو عبر التحدي"
+        },
+        "meaning": {
+          "en": "This connection may involve frequent disagreements or tension. It often requires patience and maturity to navigate. The friction can lead to growth if both parties commit to working through it.",
+          "fr": "Cette connexion peut impliquer des désaccords fréquents ou de la tension. Elle nécessite souvent patience et maturité pour naviguer. La friction peut mener à la croissance si les deux parties s'engagent à y travailler.",
+          "ar": "قد يتضمن هذا الارتباط خلافات أو توترًا متكررًا. غالبًا ما يتطلب صبرًا ونضجًا للتعامل معه. يمكن أن يؤدي الاحتكاك إلى النمو إذا التزم الطرفان بالعمل خلاله."
+        },
+        "watchOut": {
+          "en": "Constant conflict without resolution, or giving up too quickly. This path tests endurance and emotional regulation.",
+          "fr": "Conflit constant sans résolution, ou abandonner trop rapidement. Ce chemin teste l'endurance et la régulation émotionnelle.",
+          "ar": "النزاع المستمر دون حل، أو الاستسلام بسرعة زائدة. يختبر هذا المسار التحمل والتنظيم العاطفي."
+        },
+        "keyToSuccess": {
+          "en": "Clear communication, conflict resolution skills, and a commitment to personal growth. Patience (sabr) transforms friction into wisdom.",
+          "fr": "Communication claire, compétences en résolution de conflits et engagement envers la croissance personnelle. La patience (sabr) transforme la friction en sagesse.",
+          "ar": "تواصل واضح، مهارات حل النزاع، والتزام بالنمو الشخصي. الصبر يحوّل الاحتكاك إلى حكمة."
+        }
+      },
+      "4": {
+        "short": {
+          "en": "Burden and trial, emotional weight",
+          "fr": "Fardeau et épreuve, poids émotionnel",
+          "ar": "عبء وابتلاء، ثقل عاطفي"
+        },
+        "meaning": {
+          "en": "This pattern can feel heavy. Emotional strain, unspoken burdens, or recurring difficulties may arise. It often requires significant inner work and maturity from both sides.",
+          "fr": "Ce motif peut sembler lourd. Une pression émotionnelle, des fardeaux non dits ou des difficultés récurrentes peuvent surgir. Il nécessite souvent un travail intérieur significatif et de la maturité des deux côtés.",
+          "ar": "قد يشعر هذا النمط بالثقل. قد ينشأ إجهاد عاطفي أو أعباء غير معلنة أو صعوبات متكررة. غالبًا ما يتطلب عملًا داخليًا ونضجًا كبيرين من الطرفين."
+        },
+        "watchOut": {
+          "en": "Burnout, resentment, or neglecting self-care. The weight of this connection can drain energy if not managed wisely.",
+          "fr": "Épuisement, ressentiment ou négligence de l'auto-soin. Le poids de cette connexion peut drainer l'énergie s'il n'est pas géré sagement.",
+          "ar": "الإرهاق، الاستياء، أو إهمال العناية بالنفس. يمكن أن يستنزف ثقل هذا الارتباط الطاقة إن لم يُدَر بحكمة."
+        },
+        "keyToSuccess": {
+          "en": "Prioritize emotional health, set boundaries, and seek support when needed. Calm routines and therapeutic practices help lighten the load.",
+          "fr": "Prioriser la santé émotionnelle, établir des limites et chercher du soutien au besoin. Des routines calmes et des pratiques thérapeutiques aident à alléger la charge.",
+          "ar": "أعطيا الأولوية للصحة العاطفية، ضعا حدودًا، واطلبا الدعم عند الحاجة. الروتين الهادئ والممارسات العلاجية تخفف العبء."
+        }
+      },
+      "5": {
+        "short": {
+          "en": "Blessed connection, natural flow",
+          "fr": "Connexion bénie, flux naturel",
+          "ar": "رابطة مباركة، تدفق طبيعي"
+        },
+        "meaning": {
+          "en": "This pattern is traditionally favorable. Balance, growth, and mutual benefit tend to occur more naturally. The connection often feels supportive and enriching.",
+          "fr": "Ce motif est traditionnellement favorable. L'équilibre, la croissance et le bénéfice mutuel tendent à se produire plus naturellement. La connexion se sent souvent soutenante et enrichissante.",
+          "ar": "هذا النمط مؤاتٍ تقليديًا. يميل التوازن والنمو والمنفعة المتبادلة للحدوث بشكل أكثر طبيعية. غالبًا ما تشعر الرابطة بالدعم والإثراء."
+        },
+        "watchOut": {
+          "en": "Taking blessings for granted or becoming distracted by ease. Comfort can lead to complacency.",
+          "fr": "Tenir les bénédictions pour acquises ou devenir distrait par la facilité. Le confort peut mener à la complaisance.",
+          "ar": "اعتياد البركات أو التشتت بالسهولة. قد تؤدي الراحة إلى الرضا الزائد."
+        },
+        "keyToSuccess": {
+          "en": "Gratitude practices, using the blessing to support others, and maintaining spiritual discipline together.",
+          "fr": "Pratiques de gratitude, utiliser la bénédiction pour soutenir les autres et maintenir la discipline spirituelle ensemble.",
+          "ar": "ممارسات الامتنان، استخدام البركة لدعم الآخرين، والحفاظ على الانضباط الروحي معًا."
+        }
+      },
+      "6": {
+        "short": {
+          "en": "Power struggles and ego tests",
+          "fr": "Luttes de pouvoir et tests d'ego",
+          "ar": "صراعات سلطة واختبارات للأنا"
+        },
+        "meaning": {
+          "en": "This connection often involves recurring conflicts around pride, control, or differing perspectives. Both parties may struggle with ego and the need to be right.",
+          "fr": "Cette connexion implique souvent des conflits récurrents autour de l'orgueil, du contrôle ou de perspectives différentes. Les deux parties peuvent lutter avec l'ego et le besoin d'avoir raison.",
+          "ar": "غالبًا ما يتضمن هذا الارتباط نزاعات متكررة حول الكبرياء أو السيطرة أو اختلاف وجهات النظر. قد يعاني الطرفان من الأنا والحاجة إلى أن يكونا على صواب."
+        },
+        "watchOut": {
+          "en": "Endless power struggles, blame cycles, and unresolved anger. Pride amplifies friction in this pattern.",
+          "fr": "Luttes de pouvoir sans fin, cycles de blâme et colère non résolue. L'orgueil amplifie la friction dans ce motif.",
+          "ar": "صراعات السلطة بلا نهاية، دورات اللوم، والغضب غير المحلول. يضخم الكبرياء الاحتكاك في هذا النمط."
+        },
+        "keyToSuccess": {
+          "en": "Self-awareness, forgiveness practices, and letting go of the need to win. Spiritual remembrance (dhikr) softens the ego.",
+          "fr": "Conscience de soi, pratiques de pardon et lâcher le besoin de gagner. Le rappel spirituel (dhikr) adoucit l'ego.",
+          "ar": "الوعي الذاتي، ممارسات المسامحة، والتخلي عن الحاجة إلى الفوز. الذكر الروحي يليّن الأنا."
+        }
+      },
+      "7": {
+        "short": {
+          "en": "Deeply blessed, spiritually aligned",
+          "fr": "Profondément béni, aligné spirituellement",
+          "ar": "مبارك بعمق، متوافق روحيًا"
+        },
+        "meaning": {
+          "en": "This is traditionally the most favorable pattern. The connection often carries spiritual harmony and mutual benefit. Challenges before the bond may strengthen it once formed.",
+          "fr": "C'est traditionnellement le motif le plus favorable. La connexion porte souvent une harmonie spirituelle et un bénéfice mutuel. Les défis avant le lien peuvent le renforcer une fois formé.",
+          "ar": "هذا هو النمط الأكثر مؤاتاة تقليديًا. غالبًا ما يحمل الارتباط انسجامًا روحيًا ومنفعة متبادلة. قد تقوّي التحديات قبل الرابطة قوتها بعد تكوّنها."
+        },
+        "watchOut": {
+          "en": "Pride in the blessing or assuming ease means no effort is needed. External interference can disrupt this bond.",
+          "fr": "Orgueil dans la bénédiction ou supposer que la facilité signifie qu'aucun effort n'est nécessaire. L'interférence externe peut perturber ce lien.",
+          "ar": "الكبرياء بالبركة أو افتراض أن السهولة تعني عدم الحاجة للجهد. يمكن أن يعطل التدخل الخارجي هذه الرابطة."
+        },
+        "keyToSuccess": {
+          "en": "Humility, gratitude, and aligning on shared values. Protect the connection from negativity and nurture it with care.",
+          "fr": "Humilité, gratitude et alignement sur des valeurs partagées. Protéger la connexion de la négativité et la nourrir avec soin.",
+          "ar": "التواضع، الامتنان، والتوافق على القيم المشتركة. احميا الرابطة من السلبية وارعياها بعناية."
+        }
+      },
+      "8": {
+        "short": {
+          "en": "Slow start, strong over time",
+          "fr": "Début lent, fort avec le temps",
+          "ar": "بداية بطيئة، قوية مع الوقت"
+        },
+        "meaning": {
+          "en": "This connection may begin with misunderstandings or confusion, but it grows stronger with time. Patience (sabr) reveals the depth and resilience of this bond.",
+          "fr": "Cette connexion peut commencer avec des malentendus ou de la confusion, mais elle devient plus forte avec le temps. La patience (sabr) révèle la profondeur et la résilience de ce lien.",
+          "ar": "قد يبدأ هذا الارتباط بسوء فهم أو ارتباك، لكنه يقوى مع الوقت. يكشف الصبر عن عمق هذه الرابطة ومرونتها."
+        },
+        "watchOut": {
+          "en": "Judging the connection too quickly or giving up before it matures. Early friction can mislead.",
+          "fr": "Juger la connexion trop rapidement ou abandonner avant qu'elle ne mûrisse. La friction précoce peut induire en erreur.",
+          "ar": "الحكم على الرابطة بسرعة زائدة أو الاستسلام قبل نضجها. قد يضلل الاحتكاك المبكر."
+        },
+        "keyToSuccess": {
+          "en": "Give it time, practice patience, and communicate gently. Emotional intelligence and understanding deepen this bond.",
+          "fr": "Donner du temps, pratiquer la patience et communiquer doucement. L'intelligence émotionnelle et la compréhension approfondissent ce lien.",
+          "ar": "أعطياها وقتًا، مارسا الصبر، وتواصلا بلطف. الذكاء العاطفي والتفهم يعمّقان هذه الرابطة."
+        }
+      },
+      "9": {
+        "short": {
+          "en": "Difficult path, requires caution",
+          "fr": "Chemin difficile, nécessite prudence",
+          "ar": "مسار صعب، يتطلب حذرًا"
+        },
+        "meaning": {
+          "en": "This pattern is traditionally associated with recurring hardship and sudden breaks. It requires vigilance, spiritual protection, and wise counsel. Approach with care.",
+          "fr": "Ce motif est traditionnellement associé à des difficultés récurrentes et des ruptures soudaines. Il nécessite vigilance, protection spirituelle et conseil sage. Approcher avec précaution.",
+          "ar": "يرتبط هذا النمط تقليديًا بمشقة متكررة وانقطاعات مفاجئة. يتطلب يقظة وحماية روحية ومشورة حكيمة. تعامل معه بعناية."
+        },
+        "watchOut": {
+          "en": "Sudden disruptions, recurring harm patterns, and cycles that repeat despite effort. This path requires serious discernment.",
+          "fr": "Perturbations soudaines, schémas de préjudice récurrents et cycles qui se répètent malgré l'effort. Ce chemin nécessite un discernement sérieux.",
+          "ar": "اضطرابات مفاجئة، أنماط أذى متكررة، ودورات تتكرر رغم الجهد. يتطلب هذا المسار تمييزًا جادًا."
+        },
+        "keyToSuccess": {
+          "en": "Seek guidance from trusted advisors, increase spiritual practices (duʿāʾ, charity), and honor your intuition. Free will and divine mercy remain.",
+          "fr": "Chercher conseil auprès de conseillers de confiance, augmenter les pratiques spirituelles (duʿāʾ, charité) et honorer votre intuition. Le libre arbitre et la miséricorde divine demeurent.",
+          "ar": "اطلبا الإرشاد من مستشارين موثوقين، زيدا الممارسات الروحية (الدعاء، الصدقة)، واحترما حدسكما. الإرادة الحرة والرحمة الإلهية باقيتان."
+        }
+      }
+    },
+    "friendship": {
+      "1": {
+        "short": {
+          "en": "Steady but may grow distant",
+          "fr": "Stable mais peut devenir distant",
+          "ar": "ثابتة لكن قد تبتعد"
+        },
+        "meaning": {
+          "en": "This friendship often starts well and feels comfortable. Over time, it may cool or become distant without regular contact and shared activities.",
+          "fr": "Cette amitié commence souvent bien et se sent confortable. Avec le temps, elle peut se refroidir ou devenir distante sans contact régulier et activités partagées.",
+          "ar": "غالبًا ما تبدأ هذه الصداقة جيدًا وتشعر بالراحة. مع الوقت، قد تبرد أو تصبح بعيدة دون تواصل وأنشطة مشتركة منتظمة."
+        },
+        "watchOut": {
+          "en": "Drifting apart due to routine or neglect. The friendship can become surface-level if not actively maintained.",
+          "fr": "S'éloigner en raison de la routine ou de la négligence. L'amitié peut devenir superficielle si non activement maintenue.",
+          "ar": "التباعد بسبب الروتين أو الإهمال. قد تصبح الصداقة سطحية إن لم تُصان بفعالية."
+        },
+        "keyToSuccess": {
+          "en": "Regular quality time, shared interests, and checking in often. Small gestures of care keep this friendship warm.",
+          "fr": "Temps de qualité régulier, intérêts partagés et vérifications fréquentes. De petits gestes d'attention gardent cette amitié chaleureuse.",
+          "ar": "وقت نوعي منتظم، اهتمامات مشتركة، وتفقّد متكرر. اللفتات الصغيرة من الاهتمام تبقي هذه الصداقة دافئة."
+        }
+      },
+      "2": {
+        "short": {
+          "en": "Natural companionship and ease",
+          "fr": "Camaraderie naturelle et facilité",
+          "ar": "رفقة طبيعية وسهولة"
+        },
+        "meaning": {
+          "en": "This friendship flows naturally. Mutual understanding, support, and cooperation are common. You tend to bring out the best in each other.",
+          "fr": "Cette amitié coule naturellement. La compréhension mutuelle, le soutien et la coopération sont courants. Vous avez tendance à faire ressortir le meilleur l'un de l'autre.",
+          "ar": "تتدفق هذه الصداقة طبيعيًا. التفاهم المتبادل والدعم والتعاون شائعة. تميلان إلى إظهار أفضل ما في كل منكما."
+        },
+        "watchOut": {
+          "en": "Co-dependency or avoiding difficult conversations. The ease can mask unaddressed issues.",
+          "fr": "Co-dépendance ou éviter les conversations difficiles. La facilité peut masquer des problèmes non abordés.",
+          "ar": "الاعتماد المتبادل أو تجنّب المحادثات الصعبة. قد تخفي السهولة قضايا لم تُعالَج."
+        },
+        "keyToSuccess": {
+          "en": "Honest communication, mutual respect, and celebrating each other's growth. Balance closeness with healthy independence.",
+          "fr": "Communication honnête, respect mutuel et célébrer la croissance de chacun. Équilibrer la proximité avec une indépendance saine.",
+          "ar": "تواصل صادق، احترام متبادل، والاحتفال بنمو كل منكما. وازنا القرب مع الاستقلالية الصحية."
+        }
+      },
+      "3": {
+        "short": {
+          "en": "Frequent disagreements, tension",
+          "fr": "Désaccords fréquents, tension",
+          "ar": "خلافات متكررة، توتر"
+        },
+        "meaning": {
+          "en": "This friendship may involve recurring friction or misunderstandings. Patience and maturity are needed to maintain the bond.",
+          "fr": "Cette amitié peut impliquer des frictions récurrentes ou des malentendus. Patience et maturité sont nécessaires pour maintenir le lien.",
+          "ar": "قد تتضمن هذه الصداقة احتكاكًا متكررًا أو سوء تفاهم. يحتاج الحفاظ على الرابطة إلى صبر ونضج."
+        },
+        "watchOut": {
+          "en": "Constant arguments that go unresolved. The friendship can become draining if conflict is not managed.",
+          "fr": "Arguments constants qui ne sont pas résolus. L'amitié peut devenir épuisante si le conflit n'est pas géré.",
+          "ar": "المشاجرات المستمرة دون حل. قد تصبح الصداقة مستنزفة إن لم يُدَر النزاع."
+        },
+        "keyToSuccess": {
+          "en": "Clear boundaries, conflict resolution, and mutual commitment to growth. Choose your battles wisely.",
+          "fr": "Limites claires, résolution de conflits et engagement mutuel envers la croissance. Choisissez vos batailles sagement.",
+          "ar": "حدود واضحة، حل النزاع، والتزام متبادل بالنمو. اختارا معارككما بحكمة."
+        }
+      },
+      "4": {
+        "short": {
+          "en": "Heavy energy, emotional drain",
+          "fr": "Énergie lourde, épuisement émotionnel",
+          "ar": "طاقة ثقيلة، استنزاف عاطفي"
+        },
+        "meaning": {
+          "en": "This friendship can feel burdensome. One or both may struggle with emotional weight, and the connection may require significant emotional labor.",
+          "fr": "Cette amitié peut sembler pesante. Un ou les deux peuvent lutter avec un poids émotionnel, et la connexion peut nécessiter un travail émotionnel significatif.",
+          "ar": "قد تشعر هذه الصداقة بالعبء. قد يعاني أحدكما أو كلاكما من ثقل عاطفي، وقد تتطلب الرابطة عملًا عاطفيًا كبيرًا."
+        },
+        "watchOut": {
+          "en": "Emotional burnout or one-sided support. The friendship can become exhausting without balance.",
+          "fr": "Épuisement émotionnel ou soutien unilatéral. L'amitié peut devenir épuisante sans équilibre.",
+          "ar": "الإرهاق العاطفي أو الدعم من طرف واحد. قد تصبح الصداقة مرهقة دون توازن."
+        },
+        "keyToSuccess": {
+          "en": "Set boundaries, practice self-care, and be honest about your limits. Seek balance between giving and receiving.",
+          "fr": "Établir des limites, pratiquer l'auto-soin et être honnête sur vos limites. Chercher l'équilibre entre donner et recevoir.",
+          "ar": "ضعا حدودًا، مارسا العناية بالنفس، وكونا صادقين بشأن حدودكما. اسعيا للتوازن بين العطاء والأخذ."
+        }
+      },
+      "5": {
+        "short": {
+          "en": "Joyful, mutually enriching",
+          "fr": "Joyeux, mutuellement enrichissant",
+          "ar": "بهيجة ومثرية للطرفين"
+        },
+        "meaning": {
+          "en": "This friendship is traditionally blessed. Laughter, growth, and mutual support tend to flow naturally. You uplift each other.",
+          "fr": "Cette amitié est traditionnellement bénie. Rire, croissance et soutien mutuel tendent à couler naturellement. Vous vous élevez mutuellement.",
+          "ar": "هذه الصداقة مباركة تقليديًا. تميل الضحكة والنمو والدعم المتبادل للتدفق طبيعيًا. ترفعان من شأن بعضكما."
+        },
+        "watchOut": {
+          "en": "Taking the friendship for granted or only connecting during good times. Ease can lead to shallow engagement.",
+          "fr": "Tenir l'amitié pour acquise ou se connecter seulement pendant les bons moments. La facilité peut mener à un engagement superficiel.",
+          "ar": "اعتياد الصداقة أو التواصل فقط في الأوقات الجيدة. قد تؤدي السهولة إلى ارتباط سطحي."
+        },
+        "keyToSuccess": {
+          "en": "Show gratitude, support each other through challenges, and deepen the bond with shared values and experiences.",
+          "fr": "Montrer de la gratitude, se soutenir mutuellement à travers les défis et approfondir le lien avec des valeurs et expériences partagées.",
+          "ar": "أظهرا الامتنان، وادعما بعضكما عبر التحديات، وعمّقا الرابطة بالقيم والتجارب المشتركة."
+        }
+      },
+      "6": {
+        "short": {
+          "en": "Ego clashes, pride issues",
+          "fr": "Clash d'ego, problèmes d'orgueil",
+          "ar": "صدامات الأنا، مشكلات الكبرياء"
+        },
+        "meaning": {
+          "en": "This friendship often involves power dynamics and ego clashes. Both may struggle with being right or feeling superior.",
+          "fr": "Cette amitié implique souvent des dynamiques de pouvoir et des clash d'ego. Les deux peuvent lutter pour avoir raison ou se sentir supérieurs.",
+          "ar": "غالبًا ما تتضمن هذه الصداقة ديناميكيات قوة وصدامات أنا. قد يعاني كلاكما من الحاجة إلى أن يكون على صواب أو الشعور بالتفوق."
+        },
+        "watchOut": {
+          "en": "Recurring arguments about control, judgment, or differing opinions. Pride prevents reconciliation.",
+          "fr": "Arguments récurrents sur le contrôle, le jugement ou des opinions différentes. L'orgueil empêche la réconciliation.",
+          "ar": "مشاجرات متكررة حول السيطرة أو الحكم أو الآراء المختلفة. الكبرياء يمنع المصالحة."
+        },
+        "keyToSuccess": {
+          "en": "Practice humility, forgive quickly, and let go of needing to be right. Focus on mutual respect.",
+          "fr": "Pratiquer l'humilité, pardonner rapidement et lâcher le besoin d'avoir raison. Se concentrer sur le respect mutuel.",
+          "ar": "مارسا التواضع، سامحا بسرعة، وتخليا عن الحاجة لأن تكونا على صواب. ركّزا على الاحترام المتبادل."
+        }
+      },
+      "7": {
+        "short": {
+          "en": "Deep bond, loyal and blessed",
+          "fr": "Lien profond, loyal et béni",
+          "ar": "رابطة عميقة، وفية ومباركة"
+        },
+        "meaning": {
+          "en": "This is traditionally the best friendship pattern. Loyalty, trust, and spiritual connection are strong. You may feel like chosen companions.",
+          "fr": "C'est traditionnellement le meilleur motif d'amitié. La loyauté, la confiance et la connexion spirituelle sont fortes. Vous pouvez vous sentir comme des compagnons choisis.",
+          "ar": "هذا هو نمط الصداقة الأفضل تقليديًا. الولاء والثقة والاتصال الروحي قوية. قد تشعران وكأنكما رفيقان مختاران."
+        },
+        "watchOut": {
+          "en": "Pride in the friendship or assuming it requires no effort. External jealousy or interference can harm it.",
+          "fr": "Orgueil dans l'amitié ou supposer qu'elle ne nécessite aucun effort. La jalousie ou l'interférence externe peut lui nuire.",
+          "ar": "الكبرياء بالصداقة أو افتراض أنها لا تحتاج جهدًا. الغيرة الخارجية أو التدخل قد يضرها."
+        },
+        "keyToSuccess": {
+          "en": "Protect the bond, stay humble, and invest in it consistently. Align on shared values and purpose.",
+          "fr": "Protéger le lien, rester humble et y investir constamment. S'aligner sur des valeurs et un but partagés.",
+          "ar": "احميا الرابطة، ابقيا متواضعَين، واستثمرا فيها باستمرار. توافقا على القيم والغاية المشتركة."
+        }
+      },
+      "8": {
+        "short": {
+          "en": "Awkward start, grows with time",
+          "fr": "Début maladroit, grandit avec le temps",
+          "ar": "بداية محرجة، تنمو مع الوقت"
+        },
+        "meaning": {
+          "en": "This friendship may begin with misjudgment or distance. Over time, it deepens and becomes very strong. Patience reveals its value.",
+          "fr": "Cette amitié peut commencer avec un mauvais jugement ou de la distance. Avec le temps, elle s'approfondit et devient très forte. La patience révèle sa valeur.",
+          "ar": "قد تبدأ هذه الصداقة بسوء تقدير أو بُعد. مع الوقت، تتعمق وتصبح قوية جدًا. يكشف الصبر عن قيمتها."
+        },
+        "watchOut": {
+          "en": "Giving up too soon due to early misunderstandings. The friendship needs time to mature.",
+          "fr": "Abandonner trop tôt en raison de malentendus précoces. L'amitié a besoin de temps pour mûrir.",
+          "ar": "الاستسلام سريعًا بسبب سوء فهم مبكر. تحتاج الصداقة وقتًا لتنضج."
+        },
+        "keyToSuccess": {
+          "en": "Be patient, give space for growth, and communicate openly. Trust builds slowly but solidly.",
+          "fr": "Être patient, donner de l'espace pour la croissance et communiquer ouvertement. La confiance se construit lentement mais solidement.",
+          "ar": "كونا صبورين، أفسحا مجالًا للنمو، وتواصلا بانفتاح. تُبنى الثقة ببطء لكن بثبات."
+        }
+      },
+      "9": {
+        "short": {
+          "en": "Fragile, prone to sudden breaks",
+          "fr": "Fragile, sujet à des ruptures soudaines",
+          "ar": "هشة، عرضة لانقطاعات مفاجئة"
+        },
+        "meaning": {
+          "en": "This friendship is vulnerable to sudden endings or recurring harm. Caution and spiritual protection are advised.",
+          "fr": "Cette amitié est vulnérable à des fins soudaines ou à des préjudices récurrents. Prudence et protection spirituelle sont conseillées.",
+          "ar": "هذه الصداقة معرّضة لنهايات مفاجئة أو أذى متكرر. يُنصح بالحذر والحماية الروحية."
+        },
+        "watchOut": {
+          "en": "Unexpected betrayals, recurring conflicts, or patterns that don't resolve. The bond may break without warning.",
+          "fr": "Trahisons inattendues, conflits récurrents ou motifs qui ne se résolvent pas. Le lien peut se briser sans avertissement.",
+          "ar": "خيانات غير متوقعة، نزاعات متكررة، أو أنماط لا تُحل. قد تنكسر الرابطة دون إنذار."
+        },
+        "keyToSuccess": {
+          "en": "Set clear boundaries, trust your intuition, and don't force the connection. Spiritual practices offer protection.",
+          "fr": "Établir des limites claires, faire confiance à votre intuition et ne pas forcer la connexion. Les pratiques spirituelles offrent protection.",
+          "ar": "ضعا حدودًا واضحة، ثقا بحدسكما، ولا تفرضا الاتصال. توفر الممارسات الروحية حماية."
+        }
+      }
+    },
+    "family": {
+      "1": {
+        "short": {
+          "en": "Stable but emotionally distant",
+          "fr": "Stable mais émotionnellement distant",
+          "ar": "مستقرة لكن بعيدة عاطفيًا"
+        },
+        "meaning": {
+          "en": "This family bond often feels steady and reliable, but emotional warmth may fade over time without intentional connection.",
+          "fr": "Ce lien familial se sent souvent stable et fiable, mais la chaleur émotionnelle peut s'estomper avec le temps sans connexion intentionnelle.",
+          "ar": "غالبًا ما تشعر هذه الرابطة الأسرية بالثبات والموثوقية، لكن قد يتلاشى الدفء العاطفي مع الوقت دون اتصال مقصود."
+        },
+        "watchOut": {
+          "en": "Taking each other for granted or becoming emotionally detached. The relationship can feel transactional.",
+          "fr": "Se tenir mutuellement pour acquis ou devenir émotionnellement détaché. La relation peut sembler transactionnelle.",
+          "ar": "اعتياد بعضكما أو الانفصال العاطفي. قد تشعر العلاقة بالتعاملية."
+        },
+        "keyToSuccess": {
+          "en": "Regular quality time, expressing appreciation, and creating shared rituals. Small acts of love renew the bond.",
+          "fr": "Temps de qualité régulier, exprimer l'appréciation et créer des rituels partagés. De petits actes d'amour renouvellent le lien.",
+          "ar": "وقت نوعي منتظم، التعبير عن التقدير، وخلق طقوس مشتركة. لفتات الحب الصغيرة تجدد الرابطة."
+        }
+      },
+      "2": {
+        "short": {
+          "en": "Harmonious and supportive",
+          "fr": "Harmonieux et soutenant",
+          "ar": "منسجمة وداعمة"
+        },
+        "meaning": {
+          "en": "This family relationship tends to be balanced and cooperative. Mutual respect and natural understanding are common.",
+          "fr": "Cette relation familiale tend à être équilibrée et coopérative. Le respect mutuel et la compréhension naturelle sont courants.",
+          "ar": "تميل هذه العلاقة الأسرية إلى التوازن والتعاون. الاحترام المتبادل والتفاهم الطبيعي شائعان."
+        },
+        "watchOut": {
+          "en": "Avoiding conflict to keep peace, which can lead to unspoken resentment. Balance can become avoidance.",
+          "fr": "Éviter les conflits pour garder la paix, ce qui peut mener à du ressentiment non dit. L'équilibre peut devenir évitement.",
+          "ar": "تجنّب النزاع للحفاظ على السلام، مما قد يؤدي إلى استياء غير معلن. قد يتحول التوازن إلى تجنّب."
+        },
+        "keyToSuccess": {
+          "en": "Honest communication, celebrating each other, and addressing issues early. Maintain healthy boundaries.",
+          "fr": "Communication honnête, célébrer l'un l'autre et aborder les problèmes tôt. Maintenir des limites saines.",
+          "ar": "تواصل صادق، الاحتفال ببعضكما، ومعالجة القضايا مبكرًا. حافظا على حدود صحية."
+        }
+      },
+      "3": {
+        "short": {
+          "en": "Tension and recurring conflict",
+          "fr": "Tension et conflit récurrent",
+          "ar": "توتر ونزاع متكرر"
+        },
+        "meaning": {
+          "en": "This family bond may involve frequent disagreements or emotional friction. Patience and maturity are required to sustain it.",
+          "fr": "Ce lien familial peut impliquer des désaccords fréquents ou de la friction émotionnelle. Patience et maturité sont requises pour le maintenir.",
+          "ar": "قد تتضمن هذه الرابطة الأسرية خلافات متكررة أو احتكاكًا عاطفيًا. الصبر والنضج مطلوبان للحفاظ عليها."
+        },
+        "watchOut": {
+          "en": "Unresolved arguments that build resentment. The relationship can become a source of stress.",
+          "fr": "Arguments non résolus qui construisent du ressentiment. La relation peut devenir une source de stress.",
+          "ar": "مشاجرات غير محلولة تبني استياءً. قد تصبح العلاقة مصدر توتر."
+        },
+        "keyToSuccess": {
+          "en": "Family therapy, clear communication, and forgiveness practices. Establish routines that promote peace.",
+          "fr": "Thérapie familiale, communication claire et pratiques de pardon. Établir des routines qui favorisent la paix.",
+          "ar": "العلاج الأسري، التواصل الواضح، وممارسات المسامحة. أرسيا روتينًا يعزز السلام."
+        }
+      },
+      "4": {
+        "short": {
+          "en": "Heavy burdens, emotional strain",
+          "fr": "Fardeaux lourds, pression émotionnelle",
+          "ar": "أعباء ثقيلة، إجهاد عاطفي"
+        },
+        "meaning": {
+          "en": "This family relationship can feel burdensome. Emotional or health challenges may be present, requiring significant care and patience.",
+          "fr": "Cette relation familiale peut sembler pesante. Des défis émotionnels ou de santé peuvent être présents, nécessitant soin et patience significatifs.",
+          "ar": "قد تشعر هذه العلاقة الأسرية بالعبء. قد تحضر تحديات عاطفية أو صحية، تتطلب عناية وصبرًا كبيرين."
+        },
+        "watchOut": {
+          "en": "Caregiver burnout or unspoken resentment. The weight can damage both parties if not managed.",
+          "fr": "Épuisement du soignant ou ressentiment non dit. Le poids peut endommager les deux parties s'il n'est pas géré.",
+          "ar": "إرهاق مقدّم الرعاية أو استياء غير معلن. قد يضر الثقل بالطرفين إن لم يُدَر."
+        },
+        "keyToSuccess": {
+          "en": "Seek external support, set boundaries, and prioritize self-care. Share the burden with others when possible.",
+          "fr": "Chercher du soutien externe, établir des limites et prioriser l'auto-soin. Partager le fardeau avec d'autres quand possible.",
+          "ar": "اطلبا دعمًا خارجيًا، ضعا حدودًا، وأعطيا الأولوية للعناية بالنفس. شاركا العبء مع آخرين عند الإمكان."
+        }
+      },
+      "5": {
+        "short": {
+          "en": "Blessed bond, mutual joy",
+          "fr": "Lien béni, joie mutuelle",
+          "ar": "رابطة مباركة، فرح متبادل"
+        },
+        "meaning": {
+          "en": "This family relationship is traditionally favorable. Love, support, and growth tend to flow naturally. You bring out the best in each other.",
+          "fr": "Cette relation familiale est traditionnellement favorable. L'amour, le soutien et la croissance tendent à couler naturellement. Vous faites ressortir le meilleur l'un de l'autre.",
+          "ar": "هذه العلاقة الأسرية مؤاتية تقليديًا. يميل الحب والدعم والنمو للتدفق طبيعيًا. تُظهران أفضل ما في بعضكما."
+        },
+        "watchOut": {
+          "en": "Complacency or taking the blessing for granted. Ease can lead to shallow connection.",
+          "fr": "Complaisance ou tenir la bénédiction pour acquise. La facilité peut mener à une connexion superficielle.",
+          "ar": "الرضا الزائد أو اعتياد البركة. قد تؤدي السهولة إلى ارتباط سطحي."
+        },
+        "keyToSuccess": {
+          "en": "Express gratitude, deepen the bond through shared values, and support each other through all seasons.",
+          "fr": "Exprimer la gratitude, approfondir le lien par des valeurs partagées et se soutenir mutuellement à travers toutes les saisons.",
+          "ar": "عبّرا عن الامتنان، عمّقا الرابطة عبر القيم المشتركة، وادعما بعضكما في كل الأحوال."
+        }
+      },
+      "6": {
+        "short": {
+          "en": "Power struggles, pride clashes",
+          "fr": "Luttes de pouvoir, clash d'orgueil",
+          "ar": "صراعات سلطة، صدامات كبرياء"
+        },
+        "meaning": {
+          "en": "This family bond often involves control issues, judgment, or clashing egos. Both may struggle with authority and respect.",
+          "fr": "Ce lien familial implique souvent des problèmes de contrôle, de jugement ou d'ego en conflit. Les deux peuvent lutter avec l'autorité et le respect.",
+          "ar": "غالبًا ما تتضمن هذه الرابطة الأسرية قضايا سيطرة أو حكم أو صدام أنا. قد يعاني كلاكما من السلطة والاحترام."
+        },
+        "watchOut": {
+          "en": "Endless arguments about being right or controlling each other. Pride prevents healing.",
+          "fr": "Arguments sans fin sur avoir raison ou se contrôler mutuellement. L'orgueil empêche la guérison.",
+          "ar": "مشاجرات لا تنتهي حول من على صواب أو السيطرة على الآخر. الكبرياء يمنع الشفاء."
+        },
+        "keyToSuccess": {
+          "en": "Practice forgiveness, respect differences, and focus on love over control. Let go of the need to dominate.",
+          "fr": "Pratiquer le pardon, respecter les différences et se concentrer sur l'amour plutôt que le contrôle. Lâcher le besoin de dominer.",
+          "ar": "مارسا المسامحة، احترما الاختلافات، وركّزا على الحب بدلًا من السيطرة. تخليا عن الحاجة إلى الهيمنة."
+        }
+      },
+      "7": {
+        "short": {
+          "en": "Deeply connected, spiritually aligned",
+          "fr": "Profondément connecté, aligné spirituellement",
+          "ar": "متصلة بعمق، متوافقة روحيًا"
+        },
+        "meaning": {
+          "en": "This is traditionally the best family pattern. Deep love, loyalty, and spiritual connection are present. The bond feels sacred.",
+          "fr": "C'est traditionnellement le meilleur motif familial. L'amour profond, la loyauté et la connexion spirituelle sont présents. Le lien se sent sacré.",
+          "ar": "هذا هو نمط العلاقة الأسرية الأفضل تقليديًا. الحب العميق والولاء والاتصال الروحي حاضرة. تشعر الرابطة بالقدسية."
+        },
+        "watchOut": {
+          "en": "Pride in the relationship or assuming it's unbreakable. External interference can still harm it.",
+          "fr": "Orgueil dans la relation ou supposer qu'elle est incassable. L'interférence externe peut encore lui nuire.",
+          "ar": "الكبرياء بالعلاقة أو افتراض أنها لا تُكسَر. لا يزال بإمكان التدخل الخارجي أن يضرها."
+        },
+        "keyToSuccess": {
+          "en": "Protect the bond, stay humble, and nurture it with consistent care and shared spiritual practices.",
+          "fr": "Protéger le lien, rester humble et le nourrir avec soin constant et pratiques spirituelles partagées.",
+          "ar": "احميا الرابطة، ابقيا متواضعَين، وارعياها بعناية مستمرة وممارسات روحية مشتركة."
+        }
+      },
+      "8": {
+        "short": {
+          "en": "Misunderstood at first, strengthens later",
+          "fr": "Incompris au début, se renforce plus tard",
+          "ar": "سوء فهم في البداية، تقوى لاحقًا"
+        },
+        "meaning": {
+          "en": "This family relationship may start with distance or misjudgment. Over time, it grows into a strong, enduring bond.",
+          "fr": "Cette relation familiale peut commencer avec de la distance ou un mauvais jugement. Avec le temps, elle devient un lien fort et durable.",
+          "ar": "قد تبدأ هذه العلاقة الأسرية بالبعد أو سوء التقدير. مع الوقت، تنمو إلى رابطة قوية ودائمة."
+        },
+        "watchOut": {
+          "en": "Judging too quickly or giving up before the bond matures. Early friction can be misleading.",
+          "fr": "Juger trop rapidement ou abandonner avant que le lien ne mûrisse. La friction précoce peut être trompeuse.",
+          "ar": "الحكم بسرعة زائدة أو الاستسلام قبل نضج الرابطة. قد يكون الاحتكاك المبكر مضللًا."
+        },
+        "keyToSuccess": {
+          "en": "Give it time, practice patience, and communicate with empathy. Deep connection develops gradually.",
+          "fr": "Donner du temps, pratiquer la patience et communiquer avec empathie. La connexion profonde se développe graduellement.",
+          "ar": "أعطياها وقتًا، مارسا الصبر، وتواصلا بتعاطف. يتطور الاتصال العميق تدريجيًا."
+        }
+      },
+      "9": {
+        "short": {
+          "en": "Fragile bond, recurring hardship",
+          "fr": "Lien fragile, difficulté récurrente",
+          "ar": "رابطة هشة، مشقة متكررة"
+        },
+        "meaning": {
+          "en": "This family relationship is vulnerable to sudden breaks or recurring harm. Caution, prayer, and wise counsel are essential.",
+          "fr": "Cette relation familiale est vulnérable à des ruptures soudaines ou à des préjudices récurrents. Prudence, prière et conseil sage sont essentiels.",
+          "ar": "هذه العلاقة الأسرية معرضة للانقطاعات المفاجئة أو الأذى المتكرر. الحذر والدعاء والمشورة الحكيمة ضرورية."
+        },
+        "watchOut": {
+          "en": "Unexpected separations, harmful patterns, or cycles that don't resolve. The bond may fracture without warning.",
+          "fr": "Séparations inattendues, schémas nuisibles ou cycles qui ne se résolvent pas. Le lien peut se fracturer sans avertissement.",
+          "ar": "انفصالات غير متوقعة، أنماط ضارة، أو دورات لا تُحل. قد تنكسر الرابطة دون إنذار."
+        },
+        "keyToSuccess": {
+          "en": "Set boundaries, increase spiritual protection (duʿāʾ, charity), and seek guidance. Honor your wellbeing.",
+          "fr": "Établir des limites, augmenter la protection spirituelle (duʿāʾ, charité) et chercher conseil. Honorer votre bien-être.",
+          "ar": "ضعا حدودًا، زيدا الحماية الروحية (الدعاء، الصدقة)، واطلبا الإرشاد. احترما عافيتكما."
+        }
+      }
+    },
+    "work": {
+      "1": {
+        "short": {
+          "en": "Productive start, may plateau",
+          "fr": "Début productif, peut plafonner",
+          "ar": "بداية منتجة، قد تصل لهضبة"
+        },
+        "meaning": {
+          "en": "This working relationship often starts well and feels stable. Over time, it may become routine or stagnant without fresh energy.",
+          "fr": "Cette relation de travail commence souvent bien et se sent stable. Avec le temps, elle peut devenir routine ou stagnante sans énergie fraîche.",
+          "ar": "غالبًا ما تبدأ علاقة العمل هذه جيدًا وتشعر بالاستقرار. مع الوقت، قد تصبح روتينية أو راكدة دون طاقة جديدة."
+        },
+        "watchOut": {
+          "en": "Complacency or lack of innovation. The partnership can become unproductive if not renewed.",
+          "fr": "Complaisance ou manque d'innovation. Le partenariat peut devenir improductif si non renouvelé.",
+          "ar": "الرضا الزائد أو نقص الابتكار. قد تصبح الشراكة غير منتجة إن لم تُجدَّد."
+        },
+        "keyToSuccess": {
+          "en": "Set new goals regularly, celebrate wins, and inject fresh ideas. Active collaboration prevents stagnation.",
+          "fr": "Fixer de nouveaux objectifs régulièrement, célébrer les victoires et injecter des idées fraîches. La collaboration active prévient la stagnation.",
+          "ar": "ضعا أهدافًا جديدة بانتظام، احتفلا بالانتصارات، وأضيفا أفكارًا جديدة. التعاون الفعّال يمنع الركود."
+        }
+      },
+      "2": {
+        "short": {
+          "en": "Natural teamwork and balance",
+          "fr": "Travail d'équipe naturel et équilibre",
+          "ar": "عمل جماعي طبيعي وتوازن"
+        },
+        "meaning": {
+          "en": "This work connection supports collaboration and mutual respect. You complement each other's strengths and work well together.",
+          "fr": "Cette connexion de travail soutient la collaboration et le respect mutuel. Vous complétez les forces de l'autre et travaillez bien ensemble.",
+          "ar": "يدعم ارتباط العمل هذا التعاون والاحترام المتبادل. تكمّلان نقاط قوة بعضكما وتعملان معًا جيدًا."
+        },
+        "watchOut": {
+          "en": "Over-reliance on each other or avoiding necessary accountability. Balance can become avoidance of tough decisions.",
+          "fr": "Sur-dépendance l'un envers l'autre ou éviter la responsabilisation nécessaire. L'équilibre peut devenir évitement de décisions difficiles.",
+          "ar": "الاعتماد المفرط على بعضكما أو تجنّب المساءلة الضرورية. قد يتحول التوازن إلى تجنّب القرارات الصعبة."
+        },
+        "keyToSuccess": {
+          "en": "Clear roles, honest feedback, and mutual accountability. Maintain professionalism and celebrate collaboration.",
+          "fr": "Rôles clairs, retour honnête et responsabilisation mutuelle. Maintenir le professionnalisme et célébrer la collaboration.",
+          "ar": "أدوار واضحة، تغذية راجعة صادقة، ومساءلة متبادلة. حافظا على المهنية واحتفلا بالتعاون."
+        }
+      },
+      "3": {
+        "short": {
+          "en": "Friction and disagreements",
+          "fr": "Friction et désaccords",
+          "ar": "احتكاك وخلافات"
+        },
+        "meaning": {
+          "en": "This working relationship may involve frequent clashes or differing work styles. Patience and clear communication are needed.",
+          "fr": "Cette relation de travail peut impliquer des clash fréquents ou des styles de travail différents. Patience et communication claire sont nécessaires.",
+          "ar": "قد تتضمن علاقة العمل هذه صدامات متكررة أو أساليب عمل مختلفة. الصبر والتواصل الواضح مطلوبان."
+        },
+        "watchOut": {
+          "en": "Constant conflict that disrupts productivity. The tension can harm both the work and the relationship.",
+          "fr": "Conflit constant qui perturbe la productivité. La tension peut nuire à la fois au travail et à la relation.",
+          "ar": "نزاع مستمر يعطل الإنتاجية. قد يضر التوتر بالعمل والعلاقة معًا."
+        },
+        "keyToSuccess": {
+          "en": "Structured communication, defined boundaries, and conflict resolution protocols. Focus on shared goals.",
+          "fr": "Communication structurée, limites définies et protocoles de résolution de conflits. Se concentrer sur des objectifs partagés.",
+          "ar": "تواصل منظم، حدود محددة، وبروتوكولات حل النزاع. ركّزا على الأهداف المشتركة."
+        }
+      },
+      "4": {
+        "short": {
+          "en": "Heavy workload, stress and strain",
+          "fr": "Charge de travail lourde, stress et pression",
+          "ar": "عبء عمل ثقيل، ضغط وإجهاد"
+        },
+        "meaning": {
+          "en": "This work connection can feel burdensome. Stress, overwhelm, or unbalanced workloads may be common.",
+          "fr": "Cette connexion de travail peut sembler pesante. Stress, surcharge ou charges de travail déséquilibrées peuvent être courants.",
+          "ar": "قد يشعر ارتباط العمل هذا بالعبء. قد يكون الضغط أو الإرهاق أو أعباء العمل غير المتوازنة شائعة."
+        },
+        "watchOut": {
+          "en": "Burnout or resentment from unequal contribution. The partnership can become unsustainable.",
+          "fr": "Épuisement ou ressentiment d'une contribution inégale. Le partenariat peut devenir insoutenable.",
+          "ar": "الإرهاق أو الاستياء من المساهمة غير المتساوية. قد تصبح الشراكة غير مستدامة."
+        },
+        "keyToSuccess": {
+          "en": "Distribute work fairly, communicate openly about capacity, and prioritize wellbeing. Seek support when needed.",
+          "fr": "Distribuer le travail équitablement, communiquer ouvertement sur la capacité et prioriser le bien-être. Chercher du soutien au besoin.",
+          "ar": "وزّعا العمل بعدالة، تواصلا بصراحة حول القدرة، وأعطيا الأولوية للعافية. اطلبا الدعم عند الحاجة."
+        }
+      },
+      "5": {
+        "short": {
+          "en": "Productive and mutually beneficial",
+          "fr": "Productif et mutuellement bénéfique",
+          "ar": "منتجة ومفيدة للطرفين"
+        },
+        "meaning": {
+          "en": "This work relationship is traditionally favorable. Collaboration, success, and mutual growth tend to flow naturally.",
+          "fr": "Cette relation de travail est traditionnellement favorable. Collaboration, succès et croissance mutuelle tendent à couler naturellement.",
+          "ar": "علاقة العمل هذه مؤاتية تقليديًا. يميل التعاون والنجاح والنمو المتبادل للتدفق طبيعيًا."
+        },
+        "watchOut": {
+          "en": "Taking the partnership for granted or becoming complacent. Success can lead to lack of vigilance.",
+          "fr": "Tenir le partenariat pour acquis ou devenir complaisant. Le succès peut mener à un manque de vigilance.",
+          "ar": "اعتياد الشراكة أو الرضا الزائد. قد يؤدي النجاح إلى نقص اليقظة."
+        },
+        "keyToSuccess": {
+          "en": "Maintain professionalism, acknowledge contributions, and keep innovating. Shared success requires ongoing effort.",
+          "fr": "Maintenir le professionnalisme, reconnaître les contributions et continuer à innover. Le succès partagé nécessite un effort continu.",
+          "ar": "حافظا على المهنية، أقرّا بالمساهمات، وواصلا الابتكار. النجاح المشترك يتطلب جهدًا مستمرًا."
+        }
+      },
+      "6": {
+        "short": {
+          "en": "Power struggles, ego conflicts",
+          "fr": "Luttes de pouvoir, conflits d'ego",
+          "ar": "صراعات سلطة، نزاعات أنا"
+        },
+        "meaning": {
+          "en": "This work connection often involves competition, control issues, or clashing work styles. Both may struggle with authority.",
+          "fr": "Cette connexion de travail implique souvent de la compétition, des problèmes de contrôle ou des styles de travail en conflit. Les deux peuvent lutter avec l'autorité.",
+          "ar": "غالبًا ما يتضمن ارتباط العمل هذا منافسة أو قضايا سيطرة أو تصادم أساليب عمل. قد يعاني كلاكما من السلطة."
+        },
+        "watchOut": {
+          "en": "Unproductive power battles or blame cycles. Pride prevents effective collaboration.",
+          "fr": "Batailles de pouvoir improductives ou cycles de blâme. L'orgueil empêche une collaboration efficace.",
+          "ar": "معارك سلطة غير منتجة أو دورات لوم. الكبرياء يمنع التعاون الفعّال."
+        },
+        "keyToSuccess": {
+          "en": "Define clear roles, practice humility, and focus on collective goals over individual ego.",
+          "fr": "Définir des rôles clairs, pratiquer l'humilité et se concentrer sur des objectifs collectifs plutôt que l'ego individuel.",
+          "ar": "حدّدا الأدوار بوضوح، مارسا التواضع، وركّزا على الأهداف الجماعية فوق الأنا الفردية."
+        }
+      },
+      "7": {
+        "short": {
+          "en": "Excellent partnership, aligned vision",
+          "fr": "Excellent partenariat, vision alignée",
+          "ar": "شراكة ممتازة، رؤية متوافقة"
+        },
+        "meaning": {
+          "en": "This is traditionally the best work pattern. Shared vision, trust, and productivity are strong. You accomplish great things together.",
+          "fr": "C'est traditionnellement le meilleur motif de travail. Vision partagée, confiance et productivité sont fortes. Vous accomplissez de grandes choses ensemble.",
+          "ar": "هذا هو نمط العمل الأفضل تقليديًا. الرؤية المشتركة والثقة والإنتاجية قوية. تحققان أمورًا عظيمة معًا."
+        },
+        "watchOut": {
+          "en": "Pride in success or assuming the partnership requires no maintenance. External competition can create friction.",
+          "fr": "Orgueil dans le succès ou supposer que le partenariat ne nécessite aucun entretien. La compétition externe peut créer de la friction.",
+          "ar": "الكبرياء بالنجاح أو افتراض أن الشراكة لا تحتاج صيانة. المنافسة الخارجية قد تخلق احتكاكًا."
+        },
+        "keyToSuccess": {
+          "en": "Protect the partnership, stay aligned on values, and invest in the relationship. Celebrate wins humbly.",
+          "fr": "Protéger le partenariat, rester aligné sur les valeurs et investir dans la relation. Célébrer les victoires humblement.",
+          "ar": "احميا الشراكة، ابقيا متوافقَين على القيم، واستثمرا في العلاقة. احتفلا بالانتصارات بتواضع."
+        }
+      },
+      "8": {
+        "short": {
+          "en": "Slow start, strengthens over time",
+          "fr": "Début lent, se renforce avec le temps",
+          "ar": "بداية بطيئة، تقوى مع الوقت"
+        },
+        "meaning": {
+          "en": "This work relationship may begin with misalignment or miscommunication. Over time, it becomes very productive and reliable.",
+          "fr": "Cette relation de travail peut commencer avec désalignement ou mauvaise communication. Avec le temps, elle devient très productive et fiable.",
+          "ar": "قد تبدأ علاقة العمل هذه بسوء توافق أو سوء تواصل. مع الوقت، تصبح منتجة وموثوقة جدًا."
+        },
+        "watchOut": {
+          "en": "Giving up too soon due to early challenges. The partnership needs time to find its rhythm.",
+          "fr": "Abandonner trop tôt en raison de défis précoces. Le partenariat a besoin de temps pour trouver son rythme.",
+          "ar": "الاستسلام بسرعة زائدة بسبب تحديات مبكرة. تحتاج الشراكة وقتًا لإيجاد إيقاعها."
+        },
+        "keyToSuccess": {
+          "en": "Be patient, clarify expectations often, and give space for adjustment. Strong partnerships take time.",
+          "fr": "Être patient, clarifier les attentes souvent et donner de l'espace pour l'ajustement. Les partenariats solides prennent du temps.",
+          "ar": "كونا صبورين، وضّحا التوقعات بانتظام، وأفسحا مجالًا للتكيّف. الشراكات القوية تأخذ وقتًا."
+        }
+      },
+      "9": {
+        "short": {
+          "en": "Unstable, prone to sudden endings",
+          "fr": "Instable, sujet à des fins soudaines",
+          "ar": "غير مستقرة، عرضة لنهايات مفاجئة"
+        },
+        "meaning": {
+          "en": "This work relationship is vulnerable to abrupt changes, conflicts, or partnership dissolution. Caution is advised.",
+          "fr": "Cette relation de travail est vulnérable à des changements abrupts, des conflits ou une dissolution du partenariat. La prudence est conseillée.",
+          "ar": "علاقة العمل هذه معرضة لتغييرات مفاجئة أو نزاعات أو انحلال الشراكة. يُنصح بالحذر."
+        },
+        "watchOut": {
+          "en": "Unexpected betrayals, contract breaks, or recurring issues. The partnership may end without warning.",
+          "fr": "Trahisons inattendues, ruptures de contrat ou problèmes récurrents. Le partenariat peut se terminer sans avertissement.",
+          "ar": "خيانات غير متوقعة، انقطاعات في العقود، أو قضايا متكررة. قد تنتهي الشراكة دون إنذار."
+        },
+        "keyToSuccess": {
+          "en": "Maintain professional boundaries, document agreements, and trust your instincts. Have backup plans.",
+          "fr": "Maintenir des limites professionnelles, documenter les accords et faire confiance à vos instincts. Avoir des plans de secours.",
+          "ar": "حافظا على حدود مهنية، وثّقا الاتفاقيات، وثقا بحدسكما. ضعا خططًا احتياطية."
+        }
+      }
+    }
+  }
+}

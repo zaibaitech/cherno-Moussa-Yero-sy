@@ -24,7 +24,14 @@ auth/storage/books once credentials exist.
   from asrar-mobile's "4-method" person-to-person engine (Soul Connection,
   Elemental Temperament, Planetary Cosmic, Daily Interaction). Unlike
   Istikhara, this is generic algorithmic output with no cheikh attribution
-  in the source app, so it's fully live — no placeholder content.
+  in the source app, so it's fully live — no placeholder content. Soul
+  Connection carries its own rich, context-aware content (Universal /
+  Marriage / Friendship / Family / Work), a 9-bead ring visual, and a
+  letter-by-letter calculation breakdown — ported from a richer content
+  layer (`services/compatibility/soulConnectionMeanings.ts` +
+  `soulArchetypes.ts` + the real `compatibility.soul.*` translation strings)
+  discovered after an initial pass had only ported the flatter, generic
+  per-remainder descriptions from `relationshipCompatibility.ts`.
 - **Books (`/books`)** — empty catalog + a working "Pay with Wave" button
   using the static link (Phase 1 manual-confirmation flow, spec §5).
 - **i18n** — FR (default) / EN / AR via `next-intl`, with real RTL layout
@@ -48,6 +55,14 @@ verified logic directly:
   the source app's person-to-person flow). Pure and dependency-free like the
   abjad engine, and — unlike Istikhara — carries no cheikh attribution in
   the source app, so it ships fully live rather than as a placeholder.
+- `lib/abjad/soul-connection.ts`, `content/soul-connection-data.json`
+  ← `services/compatibility/soulArchetypes.ts` (severity + tags per soul
+  number) and the real EN/FR/AR text at `translations.{locale}.compatibility.soul`
+  in `constants/translations.ts` — extracted with a script run against the
+  actual `translations` export (not hand-transcribed) to avoid copy errors
+  across ~200 trilingual strings. French is missing the `relationshipContext`
+  tab labels in the source app; those five are supplied fresh here since
+  they're trivial UI labels, not attributed content.
 
 ## ⚠️ Important discrepancy found (spec §1, §8.6)
 

@@ -30,6 +30,25 @@ export function calculateHadadKabir(
   return total;
 }
 
+export interface LetterValue {
+  char: string;
+  value: number;
+}
+
+/** Per-letter abjad values for a name, in order — used for calculation-transparency displays. */
+export function getLetterBreakdown(
+  text: string,
+  abjad: Record<string, number> = ABJAD_MAGHRIBI
+): LetterValue[] {
+  const normalized = normalizeArabic(text);
+  const breakdown: LetterValue[] = [];
+  for (const char of normalized) {
+    const value = abjad[char];
+    if (value) breakdown.push({ char, value });
+  }
+  return breakdown;
+}
+
 export function calculateSaghir(total: number): number {
   if (total === 0) return 0;
   return 1 + ((total - 1) % 9);
