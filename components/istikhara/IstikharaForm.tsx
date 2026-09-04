@@ -4,11 +4,10 @@ import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { calculateDestiny } from '@/lib/abjad/coreCalculations';
 import { zodiacFromBurjIndex } from '@/lib/abjad/zodiac';
-import { ISTIKHARA_READINGS } from '@/content/istikhara-readings';
+import { fetchBurujProfile, type BurujProfile, type Locale } from '@/lib/abjad/buruj';
 import { Card } from '@/components/ui/Card';
 import { AttributionFooter } from '@/components/AttributionFooter';
-
-type Locale = 'en' | 'fr' | 'ar';
+import { BurujProfileSections } from './BurujProfileSections';
 
 export function IstikharaForm() {
   const t = useTranslations('istikhara');
@@ -16,15 +15,25 @@ export function IstikharaForm() {
   const [name, setName] = useState('');
   const [motherName, setMotherName] = useState('');
   const [result, setResult] = useState<ReturnType<typeof calculateDestiny> | null>(null);
+  const [profile, setProfile] = useState<BurujProfile | null>(null);
+  const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!name.trim()) return;
-    setResult(calculateDestiny(name, motherName));
+    const destiny = calculateDestiny(name, motherName);
+    setResult(destiny);
+    setProfile(null);
+    setLoading(true);
+    try {
+      const p = await fetchBurujProfile(destiny.burjIndex);
+      setProfile(p);
+    } finally {
+      setLoading(false);
+    }
   }
 
   const zodiac = result ? zodiacFromBurjIndex(result.burjIndex) : null;
-  const reading = zodiac ? ISTIKHARA_READINGS[zodiac.key] : null;
 
   return (
     <div className="flex flex-col gap-4">
@@ -58,16 +67,20 @@ export function IstikharaForm() {
         </button>
       </form>
 
-      {result && zodiac && reading && (
-        <Card>
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">{zodiac.symbol}</span>
-            <h2 className="text-lg font-semibold text-gold">{zodiac[locale]}</h2>
-          </div>
-          <p className="mt-2 text-sm text-slate-300">{reading.summary[locale]}</p>
-          <p className="mt-2 text-xs text-amber-400">{t('placeholderNotice')}</p>
-          <AttributionFooter name={reading.authorizedBy} />
-        </Card>
+      {result && zodiac && (
+        <div className="flex flex-col gap-3">
+          <Card>
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">{zodiac.symbol}</span>
+              <h2 className="text-lg font-semibold text-gold">{zodiac[locale]}</h2>
+              {profile && <span className="text-2xl">{profile.element_emoji}</span>}
+            </div>
+            <AttributionFooter name="Cherno Moussa Yero Sy" />
+          </Card>
+
+          {loading && <p className="px-1 text-sm text-slate-400">{t('loading')}</p>}
+          {profile && <BurujProfileSections profile={profile} locale={locale} />}
+        </div>
       )}
     </div>
   );

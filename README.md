@@ -16,8 +16,12 @@ auth/storage/books once credentials exist.
   live ephemeris source — see [Open items](#open-items) below.
 - **Istikhara (`/istikhara`)** — name + mother's-name form, running the
   ported abjad/zodiac engine live, framed as a question-guided reading (not
-  "Who Am I"). Result content is a **placeholder**, not the cheikh's actual
-  teaching — see the attribution note below.
+  "Who Am I"). Result content is now the **full per-sign profile** ported
+  from asrar-mobile's `data/burujData.json` — Personality (11 facets),
+  Career (traditional + modern paths, what to avoid), Blessed Day, Spiritual
+  Practice (divine name, Qur'anic verse, angel, jinn, ritual instructions),
+  and Sadaqah (monthly + lifetime) — all trilingual, all 12 signs. See the
+  attribution note below on this content's sourcing.
 - **Calculator (`/calculator`)** — blocked state; the cheikh's manuscript
   method hasn't been transcribed yet (spec §2/§8.5).
 - **Compatibility (`/compatibility`)** — name-vs-name harmony, ported live
@@ -63,6 +67,18 @@ verified logic directly:
   across ~200 trilingual strings. French is missing the `relationshipContext`
   tab labels in the source app; those five are supplied fresh here since
   they're trivial UI labels, not attributed content.
+- `content/buruj-data.json` (served via `app/api/buruj/[index]`, fetched
+  client-side per sign rather than bundled — the full file is ~320KB) ←
+  `data/burujData.json` in `zaibaitech/asrar-mobile`, copied verbatim. This
+  is the same data `getBurujData()`/`calculateIstikhara()` in
+  `services/istikhara/calculations.ts` serves to the "Who Am I" results
+  tabs (Personality/Career/Blessed Day/Spiritual Practice/Sadaqah) —
+  `services/istikhara/burujProfiles.ts`, which looked like it should hold
+  this data, is actually an empty stub; the real content lives in this JSON
+  file instead. Two tabs in the source app (Health, Zodiac Stones) pull
+  from two *other* data files (`constants/zodiacHealthData.ts`,
+  `constants/zodiacStones.ts`/`enhancedStoneData.ts`) not yet ported here —
+  a reasonable next addition, kept out of this pass to bound scope.
 
 ## ⚠️ Important discrepancy found (spec §1, §8.6)
 
@@ -71,14 +87,23 @@ from **Cheikh Mahdiyou Niane** — is the same person as this app's cheikh.
 Inspecting `asrar-mobile/data/zodiacSadaqahData.ts` confirms every entry is
 explicitly `authorizedBy: 'Cheikh Mahdiyou Niane'`.
 
-This repo is named for **Cherno Moussa Yero Sy** — a different name. Unless
-told otherwise, **treat them as two different scholars**: none of
-Asrariya's existing Sadaqah/"Who Am I" interpretive content may be reused or
-relicensed here (only the underlying abjad math is shared). All Istikhara
-result text and Calculator content in `content/` must come fresh from Cherno
-Moussa Yero Sy's own manuscripts/teaching, per §2. `content/istikhara-readings.ts`
-is placeholder text for every sign, clearly marked as such, pending that
-material. **Flag this to confirm before shipping real content.**
+This repo is named for **Cherno Moussa Yero Sy** — a different name, and
+**that Sadaqah content specifically (`zodiacSadaqahData.ts`) is still not
+reused here.**
+
+Per instruction, Istikhara's result content (§0's follow-up) now ports
+`data/burujData.json` instead — see above. That file carries **no
+`authorizedBy` field or scholar name anywhere** (verified: no "Cheikh",
+"Niane", or similar string in the raw JSON), unlike `zodiacSadaqahData.ts`.
+So porting it doesn't reuse Mahdiyou Niane's attributed content, but it also
+doesn't confirm the content is Cherno Moussa Yero Sy's either — it's
+unattributed in the source. It's rendered here with an
+`AttributionFooter name="Cherno Moussa Yero Sy"` on the assumption that,
+now ported into this app, it should carry this app's identity — **that
+attribution is this app's assumption, not sourced from the data.** Confirm
+with the cheikh that this is in fact his material (or reword the
+attribution) before shipping to production. Calculator content is still
+unbuilt — no equivalent existing dataset has surfaced for it yet.
 
 ## What's NOT wired up yet
 
@@ -109,6 +134,10 @@ material. **Flag this to confirm before shipping real content.**
 6. **Confirm/deny**: is Cherno Moussa Yero Sy the same person as Cheikh
    Mahdiyou Niane (attributed on Asrariya's existing Sadaqah content)? See
    the discrepancy note above — this blocks reusing any existing content.
+7. **Confirm**: is `data/burujData.json` (now powering Istikhara's
+   Personality/Career/Blessed Day/Spiritual Practice/Sadaqah content) in
+   fact Cherno Moussa Yero Sy's material? It carries no attribution in the
+   source app — this app currently attributes it to him by assumption.
 
 ## Development
 

@@ -28,9 +28,7 @@
     "motherNameLabel": "Mother's name",
     "motherNamePlaceholder": "Enter your mother's name in Arabic",
     "submit": "Reveal my reading",
-    "resultTitle": "Your reading",
-    "authorizedBy": "Authorized by",
-    "placeholderNotice": "This content is a placeholder pending the cheikh's manuscript."
+    "loading": "Loading your reading..."
   },
   "calculator": {
     "title": "Calculator",

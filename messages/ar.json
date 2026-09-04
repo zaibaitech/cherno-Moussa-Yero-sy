@@ -28,9 +28,7 @@
     "motherNameLabel": "اسم الأم",
     "motherNamePlaceholder": "أدخل اسم والدتك بالعربية",
     "submit": "اكشف قراءتي",
-    "resultTitle": "قراءتك",
-    "authorizedBy": "بإذن من",
-    "placeholderNotice": "هذا المحتوى مؤقت بانتظار مخطوطة الشيخ."
+    "loading": "جارٍ تحميل قراءتك..."
   },
   "calculator": {
     "title": "الحاسبة",
