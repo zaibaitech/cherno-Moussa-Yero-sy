@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Deftere"
+  },
+  "nav": {
+    "home": "Accueil",
+    "calculator": "Calculateur",
+    "istikhara": "Istikhara",
+    "books": "Livres"
+  },
+  "dashboard": {
+    "title": "Ilm al-Nujum",
+    "rulingPlanet": "Planète régente du jour",
+    "nextPrayer": "Prochaine prière",
+    "planetaryHour": "Heure planétaire",
+    "tomorrow": "Demain",
+    "quickStart": "Accès rapide",
+    "caution": "Avertissement",
+    "nextChange": "Prochain changement",
+    "comingSoon": "Données éphémérides en direct bientôt disponibles"
+  },
+  "istikhara": {
+    "title": "Istikhara",
+    "subtitle": "Une lecture guidée par le nom",
+    "nameLabel": "Votre nom",
+    "namePlaceholder": "Entrez votre nom en arabe",
+    "motherNameLabel": "Nom de la mère",
+    "motherNamePlaceholder": "Entrez le nom de votre mère en arabe",
+    "submit": "Révéler ma lecture",
+    "resultTitle": "Votre lecture",
+    "authorizedBy": "Autorisé par",
+    "placeholderNotice": "Ce contenu est provisoire, en attente du manuscrit du cheikh."
+  },
+  "calculator": {
+    "title": "Calculateur",
+    "comingSoon": "Ce calculateur est en cours de transcription depuis le manuscrit du cheikh et n'est pas encore prêt."
+  },
+  "books": {
+    "title": "Livres",
+    "empty": "La bibliothèque est en préparation. Revenez bientôt.",
+    "payWithWave": "Payer avec Wave"
+  },
+  "attribution": {
+    "label": "Autorisé par"
+  }
+}

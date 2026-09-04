@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "دفتره"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "calculator": "الحاسبة",
+    "istikhara": "الاستخارة",
+    "books": "الكتب"
+  },
+  "dashboard": {
+    "title": "علم النجوم",
+    "rulingPlanet": "الكوكب الحاكم اليوم",
+    "nextPrayer": "الصلاة القادمة",
+    "planetaryHour": "الساعة الفلكية",
+    "tomorrow": "غدًا",
+    "quickStart": "بداية سريعة",
+    "caution": "تنبيه",
+    "nextChange": "التغيير القادم",
+    "comingSoon": "بيانات الأفلاك المباشرة قريبًا"
+  },
+  "istikhara": {
+    "title": "الاستخارة",
+    "subtitle": "قراءة تعتمد على الاسم",
+    "nameLabel": "اسمك",
+    "namePlaceholder": "أدخل اسمك بالعربية",
+    "motherNameLabel": "اسم الأم",
+    "motherNamePlaceholder": "أدخل اسم والدتك بالعربية",
+    "submit": "اكشف قراءتي",
+    "resultTitle": "قراءتك",
+    "authorizedBy": "بإذن من",
+    "placeholderNotice": "هذا المحتوى مؤقت بانتظار مخطوطة الشيخ."
+  },
+  "calculator": {
+    "title": "الحاسبة",
+    "comingSoon": "هذه الحاسبة قيد النسخ من مخطوطة الشيخ ولم تجهز بعد."
+  },
+  "books": {
+    "title": "الكتب",
+    "empty": "المكتبة قيد الإعداد. عد قريبًا.",
+    "payWithWave": "ادفع عبر Wave"
+  },
+  "attribution": {
+    "label": "بإذن من"
+  }
+}
