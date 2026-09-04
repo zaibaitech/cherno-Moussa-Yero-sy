@@ -2,6 +2,7 @@ import { getLocale, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { BookMarked } from 'lucide-react';
 import { BOOKS } from '@/content/books';
+import { Bookshelf } from './Bookshelf';
 
 type Locale = 'en' | 'fr' | 'ar';
 
@@ -25,20 +26,6 @@ function PlaceholderCover({ seed }: { seed: number }) {
         <BookMarked size={16} className="text-gold/60" aria-hidden />
       </div>
     </div>
-  );
-}
-
-/** Decorative wood-grain shelf ledge under the row — no real asset, CSS only. */
-function ShelfLedge() {
-  return (
-    <div
-      className="h-2 w-full rounded-b-md border-t border-black/30"
-      style={{
-        background:
-          'repeating-linear-gradient(90deg, #5b3a1e 0px, #6b4423 6px, #4a2e17 12px), linear-gradient(#3d2712, #2a1a0c)',
-        backgroundBlendMode: 'overlay',
-      }}
-    />
   );
 }
 
@@ -68,7 +55,7 @@ export async function ManuscriptMarketplace() {
           </div>
         ))}
       </div>
-      <ShelfLedge />
+      <Bookshelf />
     </section>
   );
 }

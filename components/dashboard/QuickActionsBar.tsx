@@ -19,7 +19,7 @@ export async function QuickActionsBar() {
         <Link
           key={href}
           href={href}
-          className="flex min-h-[42px] items-center justify-center rounded-xl border border-gold/30 bg-navy-card px-2 py-1.5 text-center text-xs font-medium leading-tight text-gold"
+          className="flex min-h-[36px] items-center justify-center rounded-xl border border-gold/30 bg-navy-card px-2 py-1 text-center text-xs font-medium leading-tight text-gold"
         >
           {label}
         </Link>
