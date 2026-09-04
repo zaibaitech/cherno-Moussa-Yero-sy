@@ -32,8 +32,8 @@ function PlaceholderCover({ seed }: { seed: number }) {
 function Cover({ book, title }: { book: Book; title: string }) {
   if (!book.coverUrl) return <PlaceholderCover seed={book.coverSeed} />;
   return (
-    <div className="relative h-32 w-full overflow-hidden rounded-lg border border-gold/20">
-      <Image src={book.coverUrl} alt={title} fill sizes="160px" className="object-cover" />
+    <div className="relative h-32 w-full overflow-hidden rounded-lg border border-gold/20 bg-black/40">
+      <Image src={book.coverUrl} alt={title} fill sizes="160px" className="object-contain" />
     </div>
   );
 }

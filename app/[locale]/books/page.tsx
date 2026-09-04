@@ -24,8 +24,8 @@ function Cover({ book, title }: { book: Book; title: string }) {
     );
   }
   return (
-    <div className="relative h-20 w-16 shrink-0 overflow-hidden rounded-lg border border-gold/20">
-      <Image src={book.coverUrl} alt={title} fill sizes="64px" className="object-cover" />
+    <div className="relative h-20 w-16 shrink-0 overflow-hidden rounded-lg border border-gold/20 bg-black/40">
+      <Image src={book.coverUrl} alt={title} fill sizes="64px" className="object-contain" />
     </div>
   );
 }
