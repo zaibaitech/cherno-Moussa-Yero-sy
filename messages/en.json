@@ -23,8 +23,13 @@
   },
   "marketplace": {
     "title": "Manuscript Marketplace",
-    "subtitle": "Featured Manuscripts",
+    "subtitle": "Featured Manuscripts & Texts",
     "viewDetail": "View Detail"
+  },
+  "quickActions": {
+    "compatibility": "Name Compatibility",
+    "calculator": "Calculate Abjad",
+    "istikhara": "Start Istikhara"
   },
   "istikhara": {
     "title": "Istikhara",

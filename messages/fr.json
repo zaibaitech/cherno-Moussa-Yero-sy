@@ -23,8 +23,13 @@
   },
   "marketplace": {
     "title": "Marché des manuscrits",
-    "subtitle": "Manuscrits en vedette",
+    "subtitle": "Manuscrits et textes en vedette",
     "viewDetail": "Voir le détail"
+  },
+  "quickActions": {
+    "compatibility": "Compatibilité des noms",
+    "calculator": "Calculer l'Abjad",
+    "istikhara": "Commencer l'Istikhara"
   },
   "istikhara": {
     "title": "Istikhara",

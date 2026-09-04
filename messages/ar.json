@@ -23,8 +23,13 @@
   },
   "marketplace": {
     "title": "سوق المخطوطات",
-    "subtitle": "مخطوطات مميزة",
+    "subtitle": "مخطوطات ونصوص مميزة",
     "viewDetail": "عرض التفاصيل"
+  },
+  "quickActions": {
+    "compatibility": "توافق الأسماء",
+    "calculator": "احسب الأبجد",
+    "istikhara": "ابدأ الاستخارة"
   },
   "istikhara": {
     "title": "الاستخارة",

@@ -15,7 +15,7 @@ export function DashboardCard({
   badge?: { color: 'green' | 'red' | 'amber'; label: string };
 }) {
   return (
-    <Card padding="p-2.5" className="flex flex-col gap-1">
+    <Card padding="px-4 py-4" className="flex flex-col gap-1.5">
       <div className="flex items-center gap-1 text-[10px] font-medium uppercase tracking-wide text-slate-500">
         <Sparkle size={11} className="text-gold" aria-hidden />
         {label}
