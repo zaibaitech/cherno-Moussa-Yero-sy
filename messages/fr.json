@@ -6,6 +6,7 @@
     "home": "Accueil",
     "calculator": "Calculateur",
     "istikhara": "Istikhara",
+    "compatibility": "Compatibilité",
     "books": "Livres"
   },
   "dashboard": {
@@ -39,6 +40,21 @@
     "title": "Livres",
     "empty": "La bibliothèque est en préparation. Revenez bientôt.",
     "payWithWave": "Payer avec Wave"
+  },
+  "compatibility": {
+    "title": "Compatibilité",
+    "subtitle": "Harmonie entre deux personnes basée sur le nom",
+    "person1Label": "Premier nom",
+    "person2Label": "Second nom",
+    "namePlaceholder": "Entrez un nom en arabe",
+    "submit": "Révéler la compatibilité",
+    "overallScore": "Harmonie globale",
+    "spiritualDestiny": "Connexion des âmes",
+    "elementalTemperament": "Tempérament élémentaire",
+    "planetaryCosmic": "Cosmique planétaire",
+    "dailyInteraction": "Interaction quotidienne",
+    "recommendations": "Conseils",
+    "disclaimer": "Cette lecture est destinée à la réflexion spirituelle et à la connaissance de soi. Ce n'est pas une décision religieuse (fatwa) et ne doit pas remplacer un jugement sain ou un avis qualifié."
   },
   "attribution": {
     "label": "Autorisé par"

@@ -20,6 +20,11 @@ auth/storage/books once credentials exist.
   teaching — see the attribution note below.
 - **Calculator (`/calculator`)** — blocked state; the cheikh's manuscript
   method hasn't been transcribed yet (spec §2/§8.5).
+- **Compatibility (`/compatibility`)** — name-vs-name harmony, ported live
+  from asrar-mobile's "4-method" person-to-person engine (Soul Connection,
+  Elemental Temperament, Planetary Cosmic, Daily Interaction). Unlike
+  Istikhara, this is generic algorithmic output with no cheikh attribution
+  in the source app, so it's fully live — no placeholder content.
 - **Books (`/books`)** — empty catalog + a working "Pay with Wave" button
   using the static link (Phase 1 manual-confirmation flow, spec §5).
 - **i18n** — FR (default) / EN / AR via `next-intl`, with real RTL layout
@@ -34,6 +39,15 @@ verified logic directly:
   ← `utils/coreCalculations.ts`, `constants/abjad-maps.ts`,
   `constants/identityMaps.ts` in `zaibaitech/asrar-mobile`. This is a pure,
   dependency-free calculation — no API call needed, it's copied as-is.
+- `lib/abjad/compatibility.ts`, `lib/abjad/compatibility-constants.ts`
+  ← `utils/relationshipCompatibility.ts`, `constants/compatibility.ts`,
+  `types/compatibility.ts` in `zaibaitech/asrar-mobile` — the name-vs-name
+  "4-method" compatibility engine (Soul Connection / Elemental Temperament /
+  Planetary Cosmic / Daily Interaction), reusing each person's own Kabir
+  total from the abjad engine above (mother's name isn't used here, matching
+  the source app's person-to-person flow). Pure and dependency-free like the
+  abjad engine, and — unlike Istikhara — carries no cheikh attribution in
+  the source app, so it ships fully live rather than as a placeholder.
 
 ## ⚠️ Important discrepancy found (spec §1, §8.6)
 

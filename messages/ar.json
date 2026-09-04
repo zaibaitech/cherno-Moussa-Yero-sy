@@ -6,6 +6,7 @@
     "home": "الرئيسية",
     "calculator": "الحاسبة",
     "istikhara": "الاستخارة",
+    "compatibility": "التوافق",
     "books": "الكتب"
   },
   "dashboard": {
@@ -39,6 +40,21 @@
     "title": "الكتب",
     "empty": "المكتبة قيد الإعداد. عد قريبًا.",
     "payWithWave": "ادفع عبر Wave"
+  },
+  "compatibility": {
+    "title": "التوافق",
+    "subtitle": "انسجام بين شخصين يعتمد على الاسم",
+    "person1Label": "الاسم الأول",
+    "person2Label": "الاسم الثاني",
+    "namePlaceholder": "أدخل اسمًا بالعربية",
+    "submit": "اكشف التوافق",
+    "overallScore": "الانسجام العام",
+    "spiritualDestiny": "الاتصال الروحي",
+    "elementalTemperament": "المزاج العنصري",
+    "planetaryCosmic": "الكوني الفلكي",
+    "dailyInteraction": "التفاعل اليومي",
+    "recommendations": "الإرشادات",
+    "disclaimer": "هذه القراءة للتأمل الروحي ومعرفة الذات، وليست فتوى دينية، ولا ينبغي أن تحل محل الحكم السليم أو المشورة المؤهلة."
   },
   "attribution": {
     "label": "بإذن من"
