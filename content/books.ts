@@ -1,9 +1,15 @@
 /**
  * Book catalog — sample placeholder entries for the Manuscript Marketplace
  * layout, pending the cheikh's answers to spec §2/§8.3 (real titles,
- * languages, formats, pricing, and download-vs-reader rights). No cover art
- * exists yet — cards render a generated pattern instead of a real scan;
- * swap in real manuscript photography before shipping.
+ * languages, formats, pricing, and download-vs-reader rights).
+ *
+ * "Kanzul Mikban" and "The Master of Geomancy" ship with real cover art as
+ * example listings to demonstrate the card layout with a photo instead of
+ * the generated placeholder. Their credited author, "Sheikh Abdul Basit
+ * Bayan," has not been confirmed as Cherno Moussa Yero Sy or affiliated
+ * with him — flag this before treating them as real inventory rather than
+ * design examples. The remaining entries have no cover art and render the
+ * generated placeholder pattern.
  */
 
 export interface Book {
@@ -19,6 +25,52 @@ export interface Book {
 }
 
 export const BOOKS: Book[] = [
+  {
+    id: 'kanzul-mikban',
+    title: {
+      en: 'Kanzul Mikban (The Knowledge of Geomancy)',
+      fr: 'Kanzul Mikban (Le savoir de la géomancie)',
+      ar: 'كنز المكبان (علم الرمل)',
+    },
+    metadata: {
+      en: 'Sheikh Abdul Basit Bayan · Example listing',
+      fr: 'Cheikh Abdul Basit Bayan · Fiche d\'exemple',
+      ar: 'الشيخ عبد الباسط بيان · قائمة توضيحية',
+    },
+    description: {
+      en: 'Sample marketplace listing showing the manuscript card layout with real cover art. Not yet confirmed as part of the cheikh\'s manuscript inventory (spec §2).',
+      fr: 'Fiche d\'exemple illustrant la mise en page des cartes avec une vraie couverture. Pas encore confirmée comme faisant partie de l\'inventaire des manuscrits du cheikh (spec §2).',
+      ar: 'قائمة توضيحية للسوق تُظهر تصميم البطاقة بغلاف حقيقي. لم يتم بعد تأكيد انتمائها لجرد مخطوطات الشيخ (البند §2 من المواصفات).',
+    },
+    language: ['ar', 'en'],
+    priceDisplay: '$4.00 USD',
+    priceXOF: null,
+    coverUrl: '/books/kanzul-mikban.jpg',
+    coverSeed: 0,
+  },
+  {
+    id: 'master-of-geomancy',
+    title: {
+      en: 'The Master of Geomancy',
+      fr: 'Le maître de la géomancie',
+      ar: 'شيخ علم الرمل',
+    },
+    metadata: {
+      en: 'Sheikh Abdul Basit Bayan · Example listing',
+      fr: 'Cheikh Abdul Basit Bayan · Fiche d\'exemple',
+      ar: 'الشيخ عبد الباسط بيان · قائمة توضيحية',
+    },
+    description: {
+      en: 'Sample marketplace listing showing the manuscript card layout with real cover art. Not yet confirmed as part of the cheikh\'s manuscript inventory (spec §2).',
+      fr: 'Fiche d\'exemple illustrant la mise en page des cartes avec une vraie couverture. Pas encore confirmée comme faisant partie de l\'inventaire des manuscrits du cheikh (spec §2).',
+      ar: 'قائمة توضيحية للسوق تُظهر تصميم البطاقة بغلاف حقيقي. لم يتم بعد تأكيد انتمائها لجرد مخطوطات الشيخ (البند §2 من المواصفات).',
+    },
+    language: ['ar', 'en'],
+    priceDisplay: '$4.50 USD',
+    priceXOF: null,
+    coverUrl: '/books/master-of-geomancy.jpg',
+    coverSeed: 1,
+  },
   {
     id: 'al-kitab-al-manzum',
     title: { en: 'Al-Kitab al-Manzum', fr: 'Al-Kitab al-Manzum', ar: 'الكتاب المنظوم' },

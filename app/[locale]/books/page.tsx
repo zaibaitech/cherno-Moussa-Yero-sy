@@ -1,5 +1,6 @@
 import { getLocale, getTranslations } from 'next-intl/server';
-import { BOOKS } from '@/content/books';
+import Image from 'next/image';
+import { BOOKS, type Book } from '@/content/books';
 import { WAVE_STATIC_PAY_LINK } from '@/lib/wave';
 import { Card } from '@/components/ui/Card';
 import { BookOpen, BookMarked } from 'lucide-react';
@@ -11,6 +12,23 @@ const COVER_GRADIENTS = [
   'from-rose-950 via-amber-900 to-navy',
   'from-stone-800 via-amber-950 to-navy',
 ];
+
+function Cover({ book, title }: { book: Book; title: string }) {
+  if (!book.coverUrl) {
+    return (
+      <div
+        className={`flex h-20 w-16 shrink-0 items-center justify-center rounded-lg border border-gold/20 bg-gradient-to-br ${COVER_GRADIENTS[book.coverSeed % COVER_GRADIENTS.length]}`}
+      >
+        <BookMarked size={20} className="text-gold/60" aria-hidden />
+      </div>
+    );
+  }
+  return (
+    <div className="relative h-20 w-16 shrink-0 overflow-hidden rounded-lg border border-gold/20">
+      <Image src={book.coverUrl} alt={title} fill sizes="64px" className="object-cover" />
+    </div>
+  );
+}
 
 export default async function BooksPage() {
   const locale = (await getLocale()) as Locale;
@@ -29,11 +47,7 @@ export default async function BooksPage() {
         <div className="flex flex-col gap-3">
           {BOOKS.map((book) => (
             <Card key={book.id} className="flex gap-3">
-              <div
-                className={`flex h-20 w-16 shrink-0 items-center justify-center rounded-lg border border-gold/20 bg-gradient-to-br ${COVER_GRADIENTS[book.coverSeed % COVER_GRADIENTS.length]}`}
-              >
-                <BookMarked size={20} className="text-gold/60" aria-hidden />
-              </div>
+              <Cover book={book} title={book.title[locale]} />
               <div className="flex flex-1 flex-col">
                 <p className="font-medium text-slate-100">{book.title[locale]}</p>
                 <p className="text-xs text-slate-500">{book.metadata[locale]}</p>

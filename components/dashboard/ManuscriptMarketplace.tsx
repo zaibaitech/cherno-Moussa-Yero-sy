@@ -1,7 +1,8 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BookMarked } from 'lucide-react';
-import { BOOKS } from '@/content/books';
+import { BOOKS, type Book } from '@/content/books';
 
 type Locale = 'en' | 'fr' | 'ar';
 
@@ -28,6 +29,15 @@ function PlaceholderCover({ seed }: { seed: number }) {
   );
 }
 
+function Cover({ book, title }: { book: Book; title: string }) {
+  if (!book.coverUrl) return <PlaceholderCover seed={book.coverSeed} />;
+  return (
+    <div className="relative h-32 w-full overflow-hidden rounded-lg border border-gold/20">
+      <Image src={book.coverUrl} alt={title} fill sizes="160px" className="object-cover" />
+    </div>
+  );
+}
+
 export async function ManuscriptMarketplace() {
   const locale = (await getLocale()) as Locale;
   const t = await getTranslations('marketplace');
@@ -41,7 +51,7 @@ export async function ManuscriptMarketplace() {
       <div className="flex gap-3 overflow-x-auto pb-1">
         {BOOKS.map((book) => (
           <div key={book.id} className="w-40 shrink-0 rounded-2xl border border-white/5 bg-navy-card p-2.5">
-            <PlaceholderCover seed={book.coverSeed} />
+            <Cover book={book} title={book.title[locale]} />
             <p className="mt-2 truncate text-sm font-medium text-slate-100">{book.title[locale]}</p>
             <p className="truncate text-xs text-slate-500">{book.metadata[locale]}</p>
             <p className="mt-0.5 text-base font-semibold text-gold">{book.priceDisplay}</p>
