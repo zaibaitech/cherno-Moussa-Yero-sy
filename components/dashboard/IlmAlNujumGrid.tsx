@@ -12,7 +12,7 @@ export async function IlmAlNujumGrid() {
   const t = await getTranslations('dashboard');
 
   return (
-    <div className="grid grid-cols-2 gap-3">
+    <div className="grid grid-cols-2 gap-2">
       <DashboardCard
         label={t('rulingPlanet')}
         content={

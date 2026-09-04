@@ -1,8 +1,9 @@
-import { getLocale, getTranslations } from 'next-intl/server';
+import { getLocale } from 'next-intl/server';
 import { Settings } from 'lucide-react';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { SearchBar } from './SearchBar';
 import { DeftereLogo } from './DeftereLogo';
+import { HeaderTitle } from './HeaderTitle';
 
 // Intl's own part ordering (weekday/month/day vs. weekday/day/month) is kept
 // as-is per locale — only the era abbreviation is patched: Node's ICU data
@@ -29,21 +30,17 @@ function hijriDate(locale: string): string | null {
 
 export async function Header() {
   const locale = await getLocale();
-  const t = await getTranslations('app');
   const hijri = hijriDate(locale);
 
   return (
-    <header className="flex flex-col gap-3 border-b border-white/5 px-4 pb-4 pt-4">
+    <header className="flex flex-col gap-1.5 border-b border-white/5 px-4 pb-2 pt-2">
       <div className="flex items-center justify-between">
         <DeftereLogo width={150} />
         <LanguageSwitcher />
       </div>
 
       <div className="flex items-center justify-between gap-3">
-        <div>
-          <h1 className="font-logo text-2xl font-medium tracking-wide text-gold">{t('name')}</h1>
-          {hijri && <p className="text-xs text-slate-400">{hijri}</p>}
-        </div>
+        <HeaderTitle hijri={hijri} />
         <div className="flex items-center gap-2">
           <SearchBar />
           <button

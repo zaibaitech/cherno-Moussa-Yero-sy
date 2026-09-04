@@ -41,7 +41,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <div className="mx-auto flex min-h-screen max-w-md flex-col">
             <Header />
-            <main className="flex-1 px-4 pb-24 pt-4">{children}</main>
+            <main className="flex-1 px-4 pb-16 pt-2">{children}</main>
             <BottomNav />
           </div>
         </NextIntlClientProvider>
