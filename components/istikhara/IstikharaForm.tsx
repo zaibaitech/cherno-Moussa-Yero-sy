@@ -2,13 +2,14 @@
 
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
+import { RotateCcw } from 'lucide-react';
 import { calculateDestiny } from '@/lib/abjad/coreCalculations';
 import { zodiacFromBurjIndex } from '@/lib/abjad/zodiac';
 import { fetchBurujProfile, type BurujProfile, type Locale } from '@/lib/abjad/buruj';
-import { Card } from '@/components/ui/Card';
 import { AttributionFooter } from '@/components/AttributionFooter';
 import { NameField } from '@/components/forms/NameField';
-import { BurujProfileSections } from './BurujProfileSections';
+import { ResultHero } from './ResultHero';
+import { ResultTabs } from './ResultTabs';
 
 export function IstikharaForm() {
   const t = useTranslations('istikhara');
@@ -34,7 +35,35 @@ export function IstikharaForm() {
     }
   }
 
+  function handleReset() {
+    setResult(null);
+    setProfile(null);
+    setName('');
+    setMotherName('');
+  }
+
   const zodiac = result ? zodiacFromBurjIndex(result.burjIndex) : null;
+
+  if (result && zodiac) {
+    return (
+      <div className="flex flex-col gap-3">
+        <button
+          type="button"
+          onClick={handleReset}
+          className="flex items-center gap-1.5 self-start text-xs font-medium text-slate-400"
+        >
+          <RotateCcw size={13} aria-hidden />
+          {t('newCalculation')}
+        </button>
+
+        <ResultHero result={result} zodiac={zodiac} profile={profile} locale={locale} />
+        <AttributionFooter name="Cherno Moussa Yero Sy" />
+
+        {loading && <p className="px-1 text-sm text-slate-400">{t('loading')}</p>}
+        {profile && <ResultTabs profile={profile} locale={locale} />}
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col gap-4">
@@ -54,22 +83,6 @@ export function IstikharaForm() {
           {t('submit')}
         </button>
       </form>
-
-      {result && zodiac && (
-        <div className="flex flex-col gap-3">
-          <Card>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">{zodiac.symbol}</span>
-              <h2 className="text-lg font-semibold text-gold">{zodiac[locale]}</h2>
-              {profile && <span className="text-2xl">{profile.element_emoji}</span>}
-            </div>
-            <AttributionFooter name="Cherno Moussa Yero Sy" />
-          </Card>
-
-          {loading && <p className="px-1 text-sm text-slate-400">{t('loading')}</p>}
-          {profile && <BurujProfileSections profile={profile} locale={locale} />}
-        </div>
-      )}
     </div>
   );
 }

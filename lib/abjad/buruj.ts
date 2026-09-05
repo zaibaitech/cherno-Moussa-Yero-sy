@@ -126,11 +126,32 @@ export const PERSONALITY_LABELS: Record<(typeof PERSONALITY_FIELDS)[number], Tri
 };
 
 export const SECTION_LABELS = {
+  overview: { en: 'Overview', fr: "Vue d'ensemble", ar: 'نظرة عامة' },
   personality: { en: 'Personality', fr: 'Personnalité', ar: 'الشخصية' },
   career: { en: 'Career', fr: 'Carrière', ar: 'المسار المهني' },
   blessedDay: { en: 'Blessed Day', fr: 'Jour béni', ar: 'اليوم المبارك' },
   spiritualPractice: { en: 'Spiritual Practice', fr: 'Pratique spirituelle', ar: 'الممارسة الروحية' },
   sadaqah: { en: 'Sadaqah', fr: 'Sadaqah', ar: 'الصدقة' },
+} satisfies Record<string, TriText>;
+
+export const NUMBERS_LABELS = {
+  title: { en: 'Your Numbers', fr: 'Vos nombres', ar: 'أرقامك' },
+  personHadad: { en: "Your Hadad", fr: 'Votre Hadad', ar: 'حدادك' },
+  motherHadad: { en: "Mother's Hadad", fr: 'Hadad de la mère', ar: 'حداد الأم' },
+  combinedHadad: { en: 'Combined Hadad', fr: 'Hadad combiné', ar: 'الحداد المجموع' },
+  lifeNumber: { en: 'Life Number', fr: 'Nombre de vie', ar: 'رقم الحياة' },
+} satisfies Record<string, TriText>;
+
+export const ELEMENT_NAME: Record<string, TriText> = {
+  fire: { en: 'Fire', fr: 'Feu', ar: 'النار' },
+  earth: { en: 'Earth', fr: 'Terre', ar: 'التراب' },
+  air: { en: 'Air', fr: 'Air', ar: 'الهواء' },
+  water: { en: 'Water', fr: 'Eau', ar: 'الماء' },
+};
+
+export const ANGEL_JINN_LABELS = {
+  angel: { en: 'Guardian Angel', fr: 'Ange gardien', ar: 'الملَك الحارس' },
+  jinn: { en: 'Associated Jinn', fr: 'Jinn associé', ar: 'الجن المرتبط' },
 } satisfies Record<string, TriText>;
 
 export const CAREER_LABELS = {

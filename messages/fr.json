@@ -51,7 +51,8 @@
     "motherNameLabel": "Nom de la mère",
     "motherNamePlaceholder": "Entrez le nom de votre mère en arabe",
     "submit": "Révéler ma lecture",
-    "loading": "Chargement de votre lecture..."
+    "loading": "Chargement de votre lecture...",
+    "newCalculation": "Nouveau calcul"
   },
   "calculator": {
     "title": "Calculateur",

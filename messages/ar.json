@@ -51,7 +51,8 @@
     "motherNameLabel": "اسم الأم",
     "motherNamePlaceholder": "أدخل اسم والدتك بالعربية",
     "submit": "اكشف قراءتي",
-    "loading": "جارٍ تحميل قراءتك..."
+    "loading": "جارٍ تحميل قراءتك...",
+    "newCalculation": "حساب جديد"
   },
   "calculator": {
     "title": "الحاسبة",
