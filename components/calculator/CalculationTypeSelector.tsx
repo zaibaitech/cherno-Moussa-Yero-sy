@@ -1,15 +1,20 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { User, FileText, Hand, Type } from 'lucide-react';
+import { User, FileText, Hand, Type, Sparkles, BookOpen } from 'lucide-react';
 
-export type CalculationType = 'name' | 'phrase' | 'dhikr' | 'general';
+export type CalculationType = 'name' | 'phrase' | 'dhikr' | 'general' | 'divineResonance' | 'quranicResonance';
+
+/** Types that need both a person's name and a mother's name, vs. the single-field types above. */
+export const TWO_NAME_TYPES: CalculationType[] = ['divineResonance', 'quranicResonance'];
 
 export const CALCULATION_TYPES: { type: CalculationType; Icon: typeof User; titleKey: string; subtitleKey: string }[] = [
   { type: 'name', Icon: User, titleKey: 'typeName', subtitleKey: 'typeNameSubtitle' },
   { type: 'phrase', Icon: FileText, titleKey: 'typePhrase', subtitleKey: 'typePhraseSubtitle' },
   { type: 'dhikr', Icon: Hand, titleKey: 'typeDhikr', subtitleKey: 'typeDhikrSubtitle' },
   { type: 'general', Icon: Type, titleKey: 'typeGeneral', subtitleKey: 'typeGeneralSubtitle' },
+  { type: 'divineResonance', Icon: Sparkles, titleKey: 'typeDivineResonance', subtitleKey: 'typeDivineResonanceSubtitle' },
+  { type: 'quranicResonance', Icon: BookOpen, titleKey: 'typeQuranicResonance', subtitleKey: 'typeQuranicResonanceSubtitle' },
 ];
 
 const TYPES = CALCULATION_TYPES;

@@ -27,11 +27,15 @@ const ELEMENT_BAR_COLOR: Record<ElementType, string> = {
   earth: '#34d399',
 };
 
+// divineResonance/quranicResonance never reach this component (CalculatorForm
+// routes them to ResonanceResult instead) — entries kept only for type safety.
 const ANALYSIS_TITLE_KEY: Record<CalculationType, string> = {
   name: 'analysisTitleName',
   phrase: 'analysisTitlePhrase',
   dhikr: 'analysisTitleDhikr',
   general: 'analysisTitleGeneral',
+  divineResonance: 'typeDivineResonance',
+  quranicResonance: 'typeQuranicResonance',
 };
 
 function Pill({ children }: { children: React.ReactNode }) {

@@ -7,9 +7,10 @@ import { Card } from '@/components/ui/Card';
 import { NameField } from '@/components/forms/NameField';
 import { analyzeText, type TextProfile } from '@/lib/abjad/textAnalysis';
 import type { DivineName } from '@/lib/abjad/divineNames';
-import { CalculationTypeSelector, CALCULATION_TYPES, type CalculationType } from './CalculationTypeSelector';
+import { CalculationTypeSelector, CALCULATION_TYPES, TWO_NAME_TYPES, type CalculationType } from './CalculationTypeSelector';
 import { DivineNamePicker } from './DivineNamePicker';
 import { CalculatorResult } from './CalculatorResult';
+import { ResonanceResult } from './ResonanceResult';
 
 const FIELD_KEYS: Record<'name' | 'phrase' | 'general', { label: string; placeholder: string }> = {
   name: { label: 'nameFieldLabel', placeholder: 'nameFieldPlaceholder' },
@@ -21,17 +22,25 @@ export function CalculatorForm() {
   const t = useTranslations('calculator');
   const [calcType, setCalcType] = useState<CalculationType>('name');
   const [text, setText] = useState('');
+  const [motherText, setMotherText] = useState('');
   const [selectedDivineName, setSelectedDivineName] = useState<DivineName | null>(null);
   const [showDivinePicker, setShowDivinePicker] = useState(false);
   const [profile, setProfile] = useState<TextProfile | null>(null);
+  const [resonanceInput, setResonanceInput] = useState<{ person: string; mother: string } | null>(null);
   const [empty, setEmpty] = useState(false);
 
+  const isTwoNameType = TWO_NAME_TYPES.includes(calcType);
   const sourceText = calcType === 'dhikr' ? (selectedDivineName?.arabic ?? '') : text;
   const activeType = CALCULATION_TYPES.find((c) => c.type === calcType)!;
   const ActiveIcon = activeType.Icon;
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (isTwoNameType) {
+      setResonanceInput({ person: text, mother: motherText });
+      setEmpty(false);
+      return;
+    }
     const result = analyzeText(sourceText);
     setProfile(result);
     setEmpty(!result);
@@ -40,18 +49,21 @@ export function CalculatorForm() {
   function handleTypeChange(type: CalculationType) {
     setCalcType(type);
     setText('');
+    setMotherText('');
     setSelectedDivineName(null);
     setEmpty(false);
   }
 
   function handleReset() {
     setProfile(null);
+    setResonanceInput(null);
     setEmpty(false);
     setText('');
+    setMotherText('');
     setSelectedDivineName(null);
   }
 
-  if (profile) {
+  if (profile || resonanceInput) {
     return (
       <div className="flex flex-col gap-3">
         <button
@@ -62,7 +74,10 @@ export function CalculatorForm() {
           <RotateCcw size={13} aria-hidden />
           {t('newCalculation')}
         </button>
-        <CalculatorResult profile={profile} calcType={calcType} />
+        {profile && <CalculatorResult profile={profile} calcType={calcType} />}
+        {resonanceInput && (calcType === 'divineResonance' || calcType === 'quranicResonance') && (
+          <ResonanceResult calcType={calcType} personName={resonanceInput.person} motherName={resonanceInput.mother} />
+        )}
       </div>
     );
   }
@@ -104,12 +119,22 @@ export function CalculatorForm() {
               />
             )}
           </div>
+        ) : isTwoNameType ? (
+          <div className="flex flex-col gap-3">
+            <NameField label={t('nameFieldLabel')} value={text} onChange={setText} placeholder={t('nameFieldPlaceholder')} />
+            <NameField
+              label={t('motherNameFieldLabel')}
+              value={motherText}
+              onChange={setMotherText}
+              placeholder={t('motherNameFieldPlaceholder')}
+            />
+          </div>
         ) : (
           <NameField
-            label={t(FIELD_KEYS[calcType].label)}
+            label={t(FIELD_KEYS[calcType as 'name' | 'phrase' | 'general'].label)}
             value={text}
             onChange={setText}
-            placeholder={t(FIELD_KEYS[calcType].placeholder)}
+            placeholder={t(FIELD_KEYS[calcType as 'name' | 'phrase' | 'general'].placeholder)}
             showPicker={false}
           />
         )}
@@ -118,7 +143,7 @@ export function CalculatorForm() {
       {empty && <p className="text-xs text-red-400">{t('noLetters')}</p>}
       <button
         type="submit"
-        disabled={!sourceText.trim()}
+        disabled={isTwoNameType ? !text.trim() : !sourceText.trim()}
         className="rounded-xl bg-gold px-4 py-2 text-sm font-medium text-navy disabled:opacity-40"
       >
         {t('calculate')}
