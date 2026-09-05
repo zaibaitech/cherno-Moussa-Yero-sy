@@ -5,12 +5,14 @@ import { User, FileText, Hand, Type } from 'lucide-react';
 
 export type CalculationType = 'name' | 'phrase' | 'dhikr' | 'general';
 
-const TYPES: { type: CalculationType; Icon: typeof User; titleKey: string; subtitleKey: string }[] = [
+export const CALCULATION_TYPES: { type: CalculationType; Icon: typeof User; titleKey: string; subtitleKey: string }[] = [
   { type: 'name', Icon: User, titleKey: 'typeName', subtitleKey: 'typeNameSubtitle' },
   { type: 'phrase', Icon: FileText, titleKey: 'typePhrase', subtitleKey: 'typePhraseSubtitle' },
   { type: 'dhikr', Icon: Hand, titleKey: 'typeDhikr', subtitleKey: 'typeDhikrSubtitle' },
   { type: 'general', Icon: Type, titleKey: 'typeGeneral', subtitleKey: 'typeGeneralSubtitle' },
 ];
+
+const TYPES = CALCULATION_TYPES;
 
 export function CalculationTypeSelector({
   value,
