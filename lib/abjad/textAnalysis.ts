@@ -62,6 +62,10 @@ export interface ElementalComposition {
   totalLetters: number;
   dominantElement: ElementType | null;
   weakestElement: ElementType | null;
+  /** All elements tied for the highest share (e.g. two elements both at 50%). */
+  dominantElements: ElementType[];
+  /** All elements tied for the lowest share. */
+  weakestElements: ElementType[];
   balanceScore: number;
 }
 
@@ -115,6 +119,11 @@ function analyzeElementalComposition(text: string): { composition: ElementalComp
   const dominantElement = totalLetters > 0 ? ranked[0][0] : null;
   const weakestElement = totalLetters > 0 ? ranked.find(([, p]) => p === 0)?.[0] ?? null : null;
 
+  const maxPct = ranked[0]?.[1] ?? 0;
+  const minPct = ranked[ranked.length - 1]?.[1] ?? 0;
+  const dominantElements = totalLetters > 0 ? ranked.filter(([, p]) => p === maxPct).map(([el]) => el) : [];
+  const weakestElements = totalLetters > 0 ? ranked.filter(([, p]) => p === minPct).map(([el]) => el) : [];
+
   // Balance score: 100 when all four elements sit at the ideal 25% share, falling
   // off with their standard deviation from that ideal (0 when one element is 100%).
   const ideal = 25;
@@ -122,7 +131,16 @@ function analyzeElementalComposition(text: string): { composition: ElementalComp
   const balanceScore = totalLetters > 0 ? Math.max(0, Math.min(100, Math.round(100 - Math.sqrt(variance) * 2.3))) : 0;
 
   return {
-    composition: { counts, percents, totalLetters, dominantElement, weakestElement, balanceScore },
+    composition: {
+      counts,
+      percents,
+      totalLetters,
+      dominantElement,
+      weakestElement,
+      dominantElements,
+      weakestElements,
+      balanceScore,
+    },
     frequencies,
   };
 }

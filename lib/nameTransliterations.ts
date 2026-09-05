@@ -587,6 +587,20 @@ export function searchNameTransliterations(query: string): NameMatch[] {
   });
 }
 
+/**
+ * Best-effort reverse lookup: given a normalized Arabic string (diacritics
+ * already stripped, as produced by normalizeArabic), return one recorded
+ * Latin spelling for it, or null if this exact name isn't in the database.
+ * Used only for display (e.g. showing "Muḥammad" under محمد) — never
+ * fabricated when absent.
+ */
+export function findLatinForArabic(normalizedArabic: string): string | null {
+  if (!normalizedArabic) return null;
+  const strip = (s: string) => s.replace(/[ًٌٍَُِّْـ]/g, '').replace(/\s+/g, ' ').trim();
+  const match = nameTransliterations.find((entry) => strip(entry.arabic) === normalizedArabic);
+  return match?.latin ?? null;
+}
+
 export function getNameDisplayLabel(item: NameMatch | NameTransliteration): string {
   if ('matchedVariation' in item) return item.matchedVariation;
   return item.latin;
