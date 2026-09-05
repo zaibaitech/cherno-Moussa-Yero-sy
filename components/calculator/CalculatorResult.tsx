@@ -2,10 +2,12 @@
 
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
+import { Star, Link2 } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
 import { pick, ELEMENT_NAME, type Locale } from '@/lib/abjad/buruj';
-import { getLetterBreakdown } from '@/lib/abjad/coreCalculations';
+import { getLetterBreakdown, calculateSaghir } from '@/lib/abjad/coreCalculations';
 import { findLatinForArabic } from '@/lib/nameTransliterations';
+import { DIVINE_NAME_MEANING } from '@/lib/abjad/divineNameMeanings';
 import {
   ELEMENT_EMOJI,
   computeNameInsights,
@@ -66,6 +68,9 @@ export function CalculatorResult({ profile, calcType }: { profile: TextProfile; 
 
   const tellsItems = t.raw('analysisTellsItems') as string[];
   const notItems = t.raw('analysisNotItems') as string[];
+
+  const divineThemes =
+    nameInsights?.divineNameMatches.map((m) => (DIVINE_NAME_MEANING[m.number] ? pick(locale, DIVINE_NAME_MEANING[m.number]) : m.transliteration)) ?? [];
 
   return (
     <div className="flex flex-col gap-3">
@@ -288,24 +293,100 @@ export function CalculatorResult({ profile, calcType }: { profile: TextProfile; 
 
           {/* 9. Divine-name correspondences */}
           {nameInsights.divineNameMatches.length > 0 && (
-            <Card className="flex flex-col gap-2">
-              <SectionTitle>{t('divineNameResonance')}</SectionTitle>
-              <div className="flex flex-col gap-1.5">
-                {nameInsights.divineNameMatches.map((m) => (
-                  <div key={m.number} className="flex items-center justify-between rounded-lg bg-navy/60 px-2.5 py-1.5">
-                    <span className="text-sm text-slate-300">{m.transliteration}</span>
-                    <span className="flex items-center gap-2">
-                      <span dir="rtl" className="text-base text-gold">
-                        {m.arabic}
-                      </span>
-                      <span className="text-xs text-slate-500">
-                        {m.abjadValue} (Δ{m.distance})
-                      </span>
-                    </span>
-                  </div>
-                ))}
+            <Card className="flex flex-col gap-3">
+              <div>
+                <SectionTitle>{t('divineNameResonance')}</SectionTitle>
+                <p className="text-xs text-slate-500">{t('divineNameSubtitle')}</p>
               </div>
-              <InfoDisclosure label={t('whyThese')}>{t('whyTheseBody')}</InfoDisclosure>
+              <div className="flex flex-col gap-2">
+                {nameInsights.divineNameMatches.map((m, i) => {
+                  const isClosest = i === 0;
+                  const matchLabel = m.distance === 0 ? t('exactMatchLabel') : isClosest ? t('closestMatchLabel') : t('numericalCorrespondenceLabel');
+                  const diff = m.abjadValue - profile.kabir;
+                  const diffStr = diff > 0 ? `+${diff}` : `${diff}`;
+                  const divineSaghir = calculateSaghir(m.abjadValue);
+                  const meaning = DIVINE_NAME_MEANING[m.number] ? pick(locale, DIVINE_NAME_MEANING[m.number]) : null;
+                  return (
+                    <div
+                      key={m.number}
+                      className={`rounded-xl border px-3 py-2.5 ${isClosest ? 'border-gold/40 bg-gold/5' : 'border-white/10 bg-navy/60'}`}
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <div>
+                          <p dir="rtl" className="text-xl text-gold">
+                            {m.arabic}
+                          </p>
+                          <p className="text-sm font-medium text-slate-200">{m.transliteration}</p>
+                          {meaning && <p className="text-xs text-slate-500">{meaning}</p>}
+                        </div>
+                        <div className="flex shrink-0 flex-col items-end gap-1">
+                          <span className="text-sm font-semibold text-gold">{m.abjadValue}</span>
+                          <span
+                            className={`flex items-center gap-1 whitespace-nowrap rounded-full border px-2 py-0.5 text-[10px] ${
+                              isClosest ? 'border-gold/40 text-gold' : 'border-white/10 text-slate-400'
+                            }`}
+                          >
+                            {isClosest ? <Star size={10} aria-hidden /> : <Link2 size={10} aria-hidden />}
+                            {matchLabel}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="mt-2 flex flex-wrap gap-x-3 gap-y-0.5 border-t border-white/5 pt-1.5 text-[11px] text-slate-500">
+                        <span>
+                          {t('kabir')}: {profile.kabir} ↔ {m.abjadValue} ({diffStr})
+                        </span>
+                        <span>
+                          {t('reducedValueLabel')}: {profile.saghir} ↔ {divineSaghir}
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <InfoDisclosure label={t('whyThese')}>
+                <p>{t('whyTheseIntro')}</p>
+                <p className="mt-1.5">
+                  <span className="text-slate-300">{t('whyTheseRuleLabel')}:</span> {t('whyTheseRuleValue')}
+                </p>
+                <p className="mt-1.5">{t('whyTheseMultipleSystems')}</p>
+              </InfoDisclosure>
+              <p className="text-xs leading-relaxed text-slate-500">{t('divineNameEsotericNote')}</p>
+            </Card>
+          )}
+
+          {/* Symbolic attribute themes drawn from the matched Divine Names */}
+          {divineThemes.length > 0 && (
+            <Card className="flex flex-col gap-2">
+              <div>
+                <SectionTitle>{t('attributeThemesTitle')}</SectionTitle>
+                <p className="text-xs text-slate-500">{t('attributeThemesSubtitle')}</p>
+              </div>
+              <div>
+                <p className="mb-1 text-xs font-medium text-slate-500">{t('primaryThemeLabel')}</p>
+                <Pill>{divineThemes[0]}</Pill>
+              </div>
+              {divineThemes.length > 1 && (
+                <div>
+                  <p className="mb-1 text-xs font-medium text-slate-500">{t('secondaryThemesLabel')}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {divineThemes.slice(1).map((theme) => (
+                      <Pill key={theme}>{theme}</Pill>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </Card>
+          )}
+
+          {/* Spiritual reflection — contemplative, not deterministic */}
+          {divineThemes.length > 0 && (
+            <Card className="flex flex-col gap-2">
+              <SectionTitle>{t('spiritualReflectionTitle')}</SectionTitle>
+              <p className="text-sm leading-relaxed text-slate-300">
+                {t('spiritualReflectionBody', {
+                  themes: new Intl.ListFormat(locale, { style: 'long', type: 'conjunction' }).format(divineThemes),
+                })}
+              </p>
             </Card>
           )}
 
@@ -318,6 +399,7 @@ export function CalculatorResult({ profile, calcType }: { profile: TextProfile; 
               ))}
             </div>
             <p className="text-xs leading-relaxed text-slate-500">{t('dhikrDisclaimer')}</p>
+            <InfoDisclosure label={t('dhikrWhyThese')}>{t('dhikrWhyTheseBody')}</InfoDisclosure>
           </Card>
         </>
       )}
@@ -368,6 +450,7 @@ export function CalculatorResult({ profile, calcType }: { profile: TextProfile; 
             ))}
           </div>
           <p className="text-xs leading-relaxed text-slate-500">{t('dhikrDisclaimer')}</p>
+          <InfoDisclosure label={t('dhikrWhyThese')}>{t('dhikrWhyTheseBody')}</InfoDisclosure>
           <div>
             <p className="mb-1 text-xs font-medium text-slate-400">{t('bestTimesToPractice')}</p>
             <p className="text-sm text-slate-300">{DHIKR_TIMING.map((t2) => pick(locale, t2)).join(' · ')}</p>
