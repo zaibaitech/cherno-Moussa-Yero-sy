@@ -79,5 +79,15 @@
   },
   "attribution": {
     "label": "Autorisé par"
+  },
+  "nameField": {
+    "chooseFromList": "Choisir dans la liste",
+    "searchPlaceholder": "Rechercher un nom...",
+    "noResults": "Aucun nom trouvé",
+    "showKeyboard": "Afficher le clavier",
+    "hideKeyboard": "Masquer le clavier",
+    "space": "Espace",
+    "delete": "Supprimer",
+    "close": "Fermer"
   }
 }

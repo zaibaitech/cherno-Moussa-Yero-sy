@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { calculateNameCompatibility, type RelationshipCompatibility } from '@/lib/abjad/compatibility';
 import type { SoulNumber } from '@/lib/abjad/soul-connection';
 import { Card } from '@/components/ui/Card';
+import { NameField } from '@/components/forms/NameField';
 import { ScoreBar } from './ScoreBar';
 import { SoulConnectionSection } from './SoulConnectionSection';
 
@@ -54,26 +55,8 @@ export function CompatibilityForm() {
   return (
     <div className="flex flex-col gap-4">
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-        <label className="flex flex-col gap-1 text-sm text-slate-300">
-          {t('person1Label')}
-          <input
-            dir="rtl"
-            value={name1}
-            onChange={(e) => setName1(e.target.value)}
-            placeholder={t('namePlaceholder')}
-            className="rounded-xl border border-white/10 bg-navy-card px-3 py-2 text-right text-slate-100 outline-none focus:border-gold"
-          />
-        </label>
-        <label className="flex flex-col gap-1 text-sm text-slate-300">
-          {t('person2Label')}
-          <input
-            dir="rtl"
-            value={name2}
-            onChange={(e) => setName2(e.target.value)}
-            placeholder={t('namePlaceholder')}
-            className="rounded-xl border border-white/10 bg-navy-card px-3 py-2 text-right text-slate-100 outline-none focus:border-gold"
-          />
-        </label>
+        <NameField label={t('person1Label')} value={name1} onChange={setName1} placeholder={t('namePlaceholder')} />
+        <NameField label={t('person2Label')} value={name2} onChange={setName2} placeholder={t('namePlaceholder')} />
         <button
           type="submit"
           disabled={!name1.trim() || !name2.trim()}

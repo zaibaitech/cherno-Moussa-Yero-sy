@@ -79,5 +79,15 @@
   },
   "attribution": {
     "label": "Authorized by"
+  },
+  "nameField": {
+    "chooseFromList": "Choose from list",
+    "searchPlaceholder": "Search a name...",
+    "noResults": "No names found",
+    "showKeyboard": "Show keyboard",
+    "hideKeyboard": "Hide keyboard",
+    "space": "Space",
+    "delete": "Delete",
+    "close": "Close"
   }
 }

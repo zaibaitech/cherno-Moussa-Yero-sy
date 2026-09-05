@@ -79,5 +79,15 @@
   },
   "attribution": {
     "label": "بإذن من"
+  },
+  "nameField": {
+    "chooseFromList": "اختر من القائمة",
+    "searchPlaceholder": "ابحث عن اسم...",
+    "noResults": "لم يتم العثور على اسم",
+    "showKeyboard": "إظهار لوحة المفاتيح",
+    "hideKeyboard": "إخفاء لوحة المفاتيح",
+    "space": "مسافة",
+    "delete": "حذف",
+    "close": "إغلاق"
   }
 }

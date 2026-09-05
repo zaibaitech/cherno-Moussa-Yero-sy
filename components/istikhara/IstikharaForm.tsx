@@ -7,6 +7,7 @@ import { zodiacFromBurjIndex } from '@/lib/abjad/zodiac';
 import { fetchBurujProfile, type BurujProfile, type Locale } from '@/lib/abjad/buruj';
 import { Card } from '@/components/ui/Card';
 import { AttributionFooter } from '@/components/AttributionFooter';
+import { NameField } from '@/components/forms/NameField';
 import { BurujProfileSections } from './BurujProfileSections';
 
 export function IstikharaForm() {
@@ -38,26 +39,13 @@ export function IstikharaForm() {
   return (
     <div className="flex flex-col gap-4">
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-        <label className="flex flex-col gap-1 text-sm text-slate-300">
-          {t('nameLabel')}
-          <input
-            dir="rtl"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder={t('namePlaceholder')}
-            className="rounded-xl border border-white/10 bg-navy-card px-3 py-2 text-right text-slate-100 outline-none focus:border-gold"
-          />
-        </label>
-        <label className="flex flex-col gap-1 text-sm text-slate-300">
-          {t('motherNameLabel')}
-          <input
-            dir="rtl"
-            value={motherName}
-            onChange={(e) => setMotherName(e.target.value)}
-            placeholder={t('motherNamePlaceholder')}
-            className="rounded-xl border border-white/10 bg-navy-card px-3 py-2 text-right text-slate-100 outline-none focus:border-gold"
-          />
-        </label>
+        <NameField label={t('nameLabel')} value={name} onChange={setName} placeholder={t('namePlaceholder')} />
+        <NameField
+          label={t('motherNameLabel')}
+          value={motherName}
+          onChange={setMotherName}
+          placeholder={t('motherNamePlaceholder')}
+        />
         <button
           type="submit"
           disabled={!name.trim()}
