@@ -18,6 +18,9 @@
 import { ABJAD_MAGHRIBI } from './abjad-maps';
 import { calculateHadadKabir, calculateSaghir, calculateBurj, normalizeArabic } from './coreCalculations';
 import { zodiacFromBurjIndex, type ZodiacIdentity } from './zodiac';
+import { nearestDivineNames, type DivineName } from './divineNames';
+import { nearestSacred, type SacredMatch } from './sacred';
+import { ARCHETYPES, ELEMENT_GUIDANCE, BEST_TIME, POWER_DAY, type Archetype } from './calculatorContent';
 
 /** Matches the lowercase element keys used by BurujProfile.element / ELEMENT_NAME in buruj.ts. */
 export type ElementType = 'fire' | 'water' | 'air' | 'earth';
@@ -152,4 +155,50 @@ export function analyzeText(rawText: string): TextProfile | null {
     elemental: composition,
     letterFrequency: frequencies,
   };
+}
+
+// ============================================================================
+// TYPE-SPECIFIC INSIGHTS (Name / Phrase / Dhikr) — ported from asrar-mobile's
+// InsightAdapters.ts, using the same recommended-dhikr-count and matching
+// logic against the real data ported alongside it (divineNames.ts, sacred.ts).
+// ============================================================================
+
+export interface NameInsights {
+  archetype: Archetype;
+  guidance: (typeof ELEMENT_GUIDANCE)[ElementType];
+  divineNameMatches: (DivineName & { distance: number })[];
+  dhikrCounts: number[];
+  bestTime: (typeof BEST_TIME)[ElementType];
+  powerDay: (typeof POWER_DAY)[ElementType];
+}
+
+export function computeNameInsights(profile: TextProfile): NameInsights {
+  const dhikrCounts = [33, 99];
+  dhikrCounts.push(profile.saghir);
+  if (profile.kabir <= 1000 && profile.kabir !== profile.saghir) dhikrCounts.push(profile.kabir);
+
+  return {
+    archetype: ARCHETYPES[profile.saghir] ?? ARCHETYPES[1],
+    guidance: ELEMENT_GUIDANCE[profile.element],
+    divineNameMatches: nearestDivineNames(profile.kabir, 3),
+    dhikrCounts,
+    bestTime: BEST_TIME[profile.element],
+    powerDay: POWER_DAY[profile.element],
+  };
+}
+
+export interface PhraseInsights {
+  repeatedLetters: LetterFrequencyEntry[];
+  sacredMatch: SacredMatch | null;
+}
+
+/** Only surfaced when within 10 of a sacred number, matching asrar-mobile's own threshold. */
+export function computePhraseInsights(profile: TextProfile): PhraseInsights {
+  const repeatedLetters = profile.letterFrequency.filter((f) => f.count > 1).slice(0, 3);
+  const match = nearestSacred(profile.kabir);
+  return { repeatedLetters, sacredMatch: match.distance <= 10 ? match : null };
+}
+
+export function computeDhikrCounts(profile: TextProfile): { valueBased: number | null; traditional: number[] } {
+  return { valueBased: profile.saghir <= 313 ? profile.saghir : null, traditional: [33, 99, 100] };
 }

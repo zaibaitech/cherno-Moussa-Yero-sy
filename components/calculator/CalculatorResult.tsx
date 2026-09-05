@@ -1,7 +1,16 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { Card } from '@/components/ui/Card';
 import { pick, ELEMENT_NAME, type Locale } from '@/lib/abjad/buruj';
-import { ELEMENT_EMOJI, type TextProfile, type ElementType } from '@/lib/abjad/textAnalysis';
+import {
+  ELEMENT_EMOJI,
+  computeNameInsights,
+  computePhraseInsights,
+  computeDhikrCounts,
+  type TextProfile,
+  type ElementType,
+} from '@/lib/abjad/textAnalysis';
+import { DHIKR_TIMING, DHIKR_PREPARATION, DHIKR_ETIQUETTE } from '@/lib/abjad/calculatorContent';
+import type { CalculationType } from './CalculationTypeSelector';
 
 const ELEMENT_BAR_COLOR: Record<ElementType, string> = {
   fire: '#f97316',
@@ -10,7 +19,11 @@ const ELEMENT_BAR_COLOR: Record<ElementType, string> = {
   earth: '#34d399',
 };
 
-export function CalculatorResult({ profile }: { profile: TextProfile }) {
+function Pill({ children }: { children: React.ReactNode }) {
+  return <span className="rounded-full border border-gold/30 bg-gold/10 px-2.5 py-1 text-xs text-gold">{children}</span>;
+}
+
+export function CalculatorResult({ profile, calcType }: { profile: TextProfile; calcType: CalculationType }) {
   const t = useTranslations('calculator');
   const locale = useLocale() as Locale;
 
@@ -24,6 +37,10 @@ export function CalculatorResult({ profile }: { profile: TextProfile }) {
   ];
 
   const elements: ElementType[] = ['fire', 'water', 'air', 'earth'];
+
+  const nameInsights = calcType === 'name' ? computeNameInsights(profile) : null;
+  const phraseInsights = calcType === 'phrase' ? computePhraseInsights(profile) : null;
+  const dhikrCounts = calcType === 'dhikr' ? computeDhikrCounts(profile) : null;
 
   return (
     <div className="flex flex-col gap-3">
@@ -60,6 +77,130 @@ export function CalculatorResult({ profile }: { profile: TextProfile }) {
           ))}
         </div>
       </div>
+
+      {nameInsights && (
+        <Card className="flex flex-col gap-3">
+          <div>
+            <p className="text-xs font-medium text-slate-400">{t('archetype')}</p>
+            <p className="text-lg font-semibold text-gold">{pick(locale, nameInsights.archetype.title)}</p>
+            <p className="text-sm text-slate-300">{pick(locale, nameInsights.archetype.description)}</p>
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {nameInsights.archetype.qualities[locale].map((q) => (
+                <Pill key={q}>{q}</Pill>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <p className="text-xs font-medium text-slate-400">{t('spiritualGuidance')}</p>
+            <p className="text-sm text-slate-300">{pick(locale, nameInsights.guidance)}</p>
+          </div>
+
+          {nameInsights.divineNameMatches.length > 0 && (
+            <div>
+              <p className="mb-1 text-xs font-medium text-slate-400">{t('divineNameResonance')}</p>
+              <div className="flex flex-col gap-1.5">
+                {nameInsights.divineNameMatches.map((m) => (
+                  <div key={m.number} className="flex items-center justify-between rounded-lg bg-navy/60 px-2.5 py-1.5">
+                    <span className="text-sm text-slate-300">{m.transliteration}</span>
+                    <span className="flex items-center gap-2">
+                      <span dir="rtl" className="text-base text-gold">
+                        {m.arabic}
+                      </span>
+                      <span className="text-xs text-slate-500">
+                        {m.abjadValue} (Δ{m.distance})
+                      </span>
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div>
+            <p className="mb-1 text-xs font-medium text-slate-400">{t('recommendedDhikrCounts')}</p>
+            <div className="flex flex-wrap gap-1.5">
+              {nameInsights.dhikrCounts.map((c, i) => (
+                <Pill key={`${c}-${i}`}>{c}</Pill>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-2 text-xs">
+            <div>
+              <p className="font-medium text-slate-400">{t('bestTimeWindow')}</p>
+              <p className="text-slate-300">{pick(locale, nameInsights.bestTime)}</p>
+            </div>
+            <div>
+              <p className="font-medium text-slate-400">{t('powerDays')}</p>
+              <p className="text-slate-300">{pick(locale, nameInsights.powerDay)}</p>
+            </div>
+          </div>
+        </Card>
+      )}
+
+      {phraseInsights && (
+        <Card className="flex flex-col gap-3">
+          {phraseInsights.repeatedLetters.length > 0 && (
+            <div>
+              <p className="mb-1 text-xs font-medium text-slate-400">{t('repeatedLetters')}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {phraseInsights.repeatedLetters.map((f) => (
+                  <span
+                    key={f.letter}
+                    className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-navy px-2 py-1 text-xs"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: ELEMENT_BAR_COLOR[f.element] }} />
+                    <span dir="rtl" className="text-sm text-slate-100">
+                      {f.letter}
+                    </span>
+                    <span className="text-slate-500">×{f.count}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+          {phraseInsights.sacredMatch && (
+            <div>
+              <p className="text-xs font-medium text-slate-400">
+                {t('nearSacredNumber')}: {phraseInsights.sacredMatch.nearest}
+              </p>
+              <p className="text-sm text-slate-300">{pick(locale, phraseInsights.sacredMatch.significance)}</p>
+            </div>
+          )}
+        </Card>
+      )}
+
+      {dhikrCounts && (
+        <Card className="flex flex-col gap-3">
+          <div>
+            <p className="mb-1 text-xs font-medium text-slate-400">{t('suggestedCounts')}</p>
+            <div className="flex flex-wrap gap-1.5">
+              {dhikrCounts.valueBased && (
+                <Pill>
+                  {t('valueBased')}: {dhikrCounts.valueBased}
+                </Pill>
+              )}
+              {dhikrCounts.traditional.map((c) => (
+                <Pill key={c}>{c}</Pill>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="mb-1 text-xs font-medium text-slate-400">{t('bestTimesToPractice')}</p>
+            <p className="text-sm text-slate-300">{DHIKR_TIMING.map((t2) => pick(locale, t2)).join(' · ')}</p>
+          </div>
+          <div>
+            <p className="mb-1 text-xs font-medium text-slate-400">{t('practiceGuidance')}</p>
+            <p className="text-xs text-slate-500">
+              {t('preparation')}: {DHIKR_PREPARATION.map((p) => pick(locale, p)).join(', ')}
+            </p>
+            <p className="text-xs text-slate-500">
+              {t('etiquette')}: {DHIKR_ETIQUETTE.map((p) => pick(locale, p)).join(', ')}
+            </p>
+          </div>
+        </Card>
+      )}
 
       <Card className="flex flex-col gap-3">
         <div className="flex items-center justify-between">
