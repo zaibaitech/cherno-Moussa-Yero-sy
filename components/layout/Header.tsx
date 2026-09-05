@@ -35,7 +35,11 @@ export async function Header() {
   return (
     <header className="flex flex-col gap-1.5 border-b border-white/5 px-4 pb-2 pt-2">
       <div className="flex items-center justify-between">
-        <DeftereLogo width={150} />
+        <div className="flex flex-col">
+          {/* pl-9 lines up with the "Deftere" text start inside the logo SVG (icon + gap), not the icon itself */}
+          <span className="pl-9 text-[9px] font-medium uppercase tracking-[0.2em] text-gold/60">Moussa</span>
+          <DeftereLogo width={150} />
+        </div>
         <LanguageSwitcher />
       </div>
 
