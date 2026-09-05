@@ -56,7 +56,23 @@
   },
   "calculator": {
     "title": "الحاسبة",
-    "comingSoon": "هذه الحاسبة قيد النسخ من مخطوطة الشيخ ولم تجهز بعد."
+    "subtitle": "تحليل كلاسيكي لقيم الحروف لأي نص عربي",
+    "inputLabel": "النص العربي",
+    "inputPlaceholder": "أدخل اسمًا أو عبارة أو اسمًا إلهيًا",
+    "calculate": "احسب",
+    "newCalculation": "حساب جديد",
+    "kabir": "الكبير (المجموع)",
+    "saghir": "الصغير (الجذر)",
+    "sirr": "السر",
+    "wusta": "الوسطى",
+    "kamal": "الكمال",
+    "bast": "البسط",
+    "elementalComposition": "التركيب العنصري",
+    "letterFrequency": "تكرار الحروف",
+    "balanceScore": "درجة التوازن",
+    "dominantElement": "العنصر الغالب",
+    "weakestElement": "العنصر الأضعف",
+    "noLetters": "لم يتم العثور على حروف عربية للتحليل"
   },
   "books": {
     "title": "الكتب",

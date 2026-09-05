@@ -11,11 +11,14 @@ export function NameField({
   value,
   onChange,
   placeholder,
+  showPicker: allowPicker = true,
 }: {
   label: string;
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
+  /** Hide "Choose from list" — the picker is a person-name database, not relevant for arbitrary text. */
+  showPicker?: boolean;
 }) {
   const t = useTranslations('nameField');
   const [showKeyboard, setShowKeyboard] = useState(false);
@@ -25,14 +28,16 @@ export function NameField({
     <div className="flex flex-col gap-1.5">
       <div className="flex items-center justify-between">
         <span className="text-sm text-slate-300">{label}</span>
-        <button
-          type="button"
-          onClick={() => setShowPicker(true)}
-          className="flex items-center gap-1 text-xs font-medium text-gold underline underline-offset-2"
-        >
-          <List size={13} aria-hidden />
-          {t('chooseFromList')}
-        </button>
+        {allowPicker && (
+          <button
+            type="button"
+            onClick={() => setShowPicker(true)}
+            className="flex items-center gap-1 text-xs font-medium text-gold underline underline-offset-2"
+          >
+            <List size={13} aria-hidden />
+            {t('chooseFromList')}
+          </button>
+        )}
       </div>
 
       <input

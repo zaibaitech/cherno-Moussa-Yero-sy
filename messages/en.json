@@ -56,7 +56,23 @@
   },
   "calculator": {
     "title": "Calculator",
-    "comingSoon": "This calculator is being transcribed from the cheikh's manuscript and isn't ready yet."
+    "subtitle": "Classical letter-value analysis for any Arabic text",
+    "inputLabel": "Arabic text",
+    "inputPlaceholder": "Enter a name, phrase, or divine name",
+    "calculate": "Calculate",
+    "newCalculation": "New calculation",
+    "kabir": "Kabīr (Total)",
+    "saghir": "Ṣaghīr (Root)",
+    "sirr": "Sirr (Secret)",
+    "wusta": "Wusṭā (Middle)",
+    "kamal": "Kamāl (Perfection)",
+    "bast": "Basṭ (Expansion)",
+    "elementalComposition": "Elemental Composition",
+    "letterFrequency": "Letter Frequency",
+    "balanceScore": "Balance Score",
+    "dominantElement": "Dominant Element",
+    "weakestElement": "Weakest Element",
+    "noLetters": "No Arabic letters found to analyze"
   },
   "books": {
     "title": "Books",

@@ -56,7 +56,23 @@
   },
   "calculator": {
     "title": "Calculateur",
-    "comingSoon": "Ce calculateur est en cours de transcription depuis le manuscrit du cheikh et n'est pas encore prêt."
+    "subtitle": "Analyse classique de la valeur des lettres pour tout texte arabe",
+    "inputLabel": "Texte arabe",
+    "inputPlaceholder": "Entrez un nom, une phrase ou un nom divin",
+    "calculate": "Calculer",
+    "newCalculation": "Nouveau calcul",
+    "kabir": "Kabīr (Total)",
+    "saghir": "Ṣaghīr (Racine)",
+    "sirr": "Sirr (Secret)",
+    "wusta": "Wusṭā (Milieu)",
+    "kamal": "Kamāl (Perfection)",
+    "bast": "Basṭ (Expansion)",
+    "elementalComposition": "Composition élémentaire",
+    "letterFrequency": "Fréquence des lettres",
+    "balanceScore": "Score d'équilibre",
+    "dominantElement": "Élément dominant",
+    "weakestElement": "Élément le plus faible",
+    "noLetters": "Aucune lettre arabe trouvée à analyser"
   },
   "books": {
     "title": "Livres",
