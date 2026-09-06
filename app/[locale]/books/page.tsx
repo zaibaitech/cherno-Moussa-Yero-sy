@@ -1,7 +1,8 @@
+import { headers } from 'next/headers';
 import { getLocale, getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { BOOKS, type Book } from '@/content/books';
-import { WAVE_STATIC_PAY_LINK } from '@/lib/wave';
+import { getWaveHref } from '@/lib/wave';
 import { Card } from '@/components/ui/Card';
 import { BookOpen, BookMarked } from 'lucide-react';
 
@@ -33,6 +34,8 @@ function Cover({ book, title }: { book: Book; title: string }) {
 export default async function BooksPage() {
   const locale = (await getLocale()) as Locale;
   const t = await getTranslations('books');
+  const userAgent = (await headers()).get('user-agent');
+  const wavePayHref = getWaveHref(userAgent);
 
   return (
     <div className="flex flex-col gap-4">
@@ -53,7 +56,7 @@ export default async function BooksPage() {
                 <p className="text-xs text-slate-500">{book.metadata[locale]}</p>
                 <p className="mt-1 text-sm font-semibold text-gold">{book.priceDisplay}</p>
                 <a
-                  href={WAVE_STATIC_PAY_LINK}
+                  href={wavePayHref}
                   className="mt-2 inline-block self-start rounded-xl bg-gold px-4 py-2 text-sm font-medium text-navy"
                 >
                   {t('payWithWave')}
