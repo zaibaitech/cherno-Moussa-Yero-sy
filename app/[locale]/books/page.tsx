@@ -54,8 +54,6 @@ export default async function BooksPage() {
                 <p className="mt-1 text-sm font-semibold text-gold">{book.priceDisplay}</p>
                 <a
                   href={WAVE_STATIC_PAY_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="mt-2 inline-block self-start rounded-xl bg-gold px-4 py-2 text-sm font-medium text-navy"
                 >
                   {t('payWithWave')}
