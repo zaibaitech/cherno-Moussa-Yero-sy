@@ -7,7 +7,7 @@ import { Card } from '@/components/ui/Card';
 import { NameField } from '@/components/forms/NameField';
 import { analyzeText, type TextProfile } from '@/lib/abjad/textAnalysis';
 import type { DivineName } from '@/lib/abjad/divineNames';
-import { CalculationTypeSelector, CALCULATION_TYPES, TWO_NAME_TYPES, type CalculationType } from './CalculationTypeSelector';
+import { CALCULATION_TYPES, TWO_NAME_TYPES, type CalculationType } from './calculatorTypes';
 import { DivineNamePicker } from './DivineNamePicker';
 import { CalculatorResult } from './CalculatorResult';
 import { ResonanceResult } from './ResonanceResult';
@@ -18,9 +18,15 @@ const FIELD_KEYS: Record<'name' | 'phrase' | 'general', { label: string; placeho
   general: { label: 'generalFieldLabel', placeholder: 'generalFieldPlaceholder' },
 };
 
-export function CalculatorForm() {
+/**
+ * The input form + result for exactly one calculator type — no type
+ * switcher here. Each type lives on its own page (app/[locale]/calculator/
+ * [type]), reached from the browse list (CalculatorTypeBrowser), so a
+ * visitor sees either "pick a calculator" or "use this calculator," never
+ * both stacked on one screen.
+ */
+export function CalculatorTypeForm({ calcType }: { calcType: CalculationType }) {
   const t = useTranslations('calculator');
-  const [calcType, setCalcType] = useState<CalculationType>('name');
   const [text, setText] = useState('');
   const [motherText, setMotherText] = useState('');
   const [selectedDivineName, setSelectedDivineName] = useState<DivineName | null>(null);
@@ -44,14 +50,6 @@ export function CalculatorForm() {
     const result = analyzeText(sourceText);
     setProfile(result);
     setEmpty(!result);
-  }
-
-  function handleTypeChange(type: CalculationType) {
-    setCalcType(type);
-    setText('');
-    setMotherText('');
-    setSelectedDivineName(null);
-    setEmpty(false);
   }
 
   function handleReset() {
@@ -84,8 +82,6 @@ export function CalculatorForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      <CalculationTypeSelector value={calcType} onChange={handleTypeChange} />
-
       <Card className="flex flex-col gap-3">
         <div className="flex items-center gap-2 border-b border-white/5 pb-2">
           <ActiveIcon size={16} className="text-gold" aria-hidden />

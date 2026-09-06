@@ -1,57 +1,19 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { useTranslations } from 'next-intl';
-import { User, FileText, Hand, Type, Sparkles, BookOpen, Search, ChevronRight, Check } from 'lucide-react';
+import { useTranslations, useLocale } from 'next-intl';
+import Link from 'next/link';
+import { Search, ChevronRight } from 'lucide-react';
+import { CALCULATION_TYPES, CATEGORIES } from './calculatorTypes';
 
-export type CalculationType = 'name' | 'phrase' | 'dhikr' | 'general' | 'divineResonance' | 'quranicResonance';
-
-/** Types that need both a person's name and a mother's name, vs. the single-field types above. */
-export const TWO_NAME_TYPES: CalculationType[] = ['divineResonance', 'quranicResonance'];
-
-type CategoryKey = 'textAnalysis' | 'divine' | 'quran';
-
-const CATEGORIES: { key: CategoryKey; Icon: typeof User; labelKey: string }[] = [
-  { key: 'textAnalysis', Icon: FileText, labelKey: 'categoryTextAnalysis' },
-  { key: 'divine', Icon: Sparkles, labelKey: 'categoryDivine' },
-  { key: 'quran', Icon: BookOpen, labelKey: 'categoryQuran' },
-];
-
-export const CALCULATION_TYPES: {
-  type: CalculationType;
-  Icon: typeof User;
-  titleKey: string;
-  subtitleKey: string;
-  category: CategoryKey;
-}[] = [
-  { type: 'name', Icon: User, titleKey: 'typeName', subtitleKey: 'typeNameSubtitle', category: 'textAnalysis' },
-  { type: 'phrase', Icon: FileText, titleKey: 'typePhrase', subtitleKey: 'typePhraseSubtitle', category: 'textAnalysis' },
-  { type: 'general', Icon: Type, titleKey: 'typeGeneral', subtitleKey: 'typeGeneralSubtitle', category: 'textAnalysis' },
-  { type: 'dhikr', Icon: Hand, titleKey: 'typeDhikr', subtitleKey: 'typeDhikrSubtitle', category: 'divine' },
-  {
-    type: 'divineResonance',
-    Icon: Sparkles,
-    titleKey: 'typeDivineResonance',
-    subtitleKey: 'typeDivineResonanceSubtitle',
-    category: 'divine',
-  },
-  {
-    type: 'quranicResonance',
-    Icon: BookOpen,
-    titleKey: 'typeQuranicResonance',
-    subtitleKey: 'typeQuranicResonanceSubtitle',
-    category: 'quran',
-  },
-];
-
-export function CalculationTypeSelector({
-  value,
-  onChange,
-}: {
-  value: CalculationType;
-  onChange: (type: CalculationType) => void;
-}) {
+/**
+ * Browse-only list of calculator types — selecting one navigates to its own
+ * page (app/[locale]/calculator/[type]) instead of swapping a form in place,
+ * so the type picker and the input form are never visible at once.
+ */
+export function CalculatorTypeBrowser() {
   const t = useTranslations('calculator');
+  const locale = useLocale();
   const [query, setQuery] = useState('');
 
   // Strip apostrophes so "quran" matches "Qur'anic" — a real query users type.
@@ -103,38 +65,24 @@ export function CalculationTypeSelector({
                 {t(cat.labelKey)}
               </div>
               <div className="flex flex-col overflow-hidden rounded-xl border border-white/10 bg-navy-card">
-                {cat.items.map(({ type, Icon, titleKey, subtitleKey }, i) => {
-                  const isActive = type === value;
-                  return (
-                    <button
-                      key={type}
-                      type="button"
-                      onClick={() => onChange(type)}
-                      className={`flex items-center gap-3 px-3 py-3 text-left ${
-                        i > 0 ? 'border-t border-white/5' : ''
-                      } ${isActive ? 'bg-gold/10' : ''}`}
-                    >
-                      <span
-                        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
-                          isActive ? 'bg-gold/20 text-gold' : 'bg-white/5 text-slate-400'
-                        }`}
-                      >
-                        <Icon size={16} aria-hidden />
-                      </span>
-                      <span className="flex-1">
-                        <span className={`block text-sm font-medium ${isActive ? 'text-gold' : 'text-slate-100'}`}>
-                          {t(titleKey)}
-                        </span>
-                        <span className="block text-xs text-slate-500">{t(subtitleKey)}</span>
-                      </span>
-                      {isActive ? (
-                        <Check size={16} className="shrink-0 text-gold" aria-hidden />
-                      ) : (
-                        <ChevronRight size={16} className="shrink-0 text-slate-600 rtl:rotate-180" aria-hidden />
-                      )}
-                    </button>
-                  );
-                })}
+                {cat.items.map(({ type, Icon, titleKey, subtitleKey }, i) => (
+                  <Link
+                    key={type}
+                    href={`/${locale}/calculator/${type}`}
+                    className={`flex items-center gap-3 px-3 py-3 text-left active:bg-gold/5 ${
+                      i > 0 ? 'border-t border-white/5' : ''
+                    }`}
+                  >
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/5 text-slate-400">
+                      <Icon size={16} aria-hidden />
+                    </span>
+                    <span className="flex-1">
+                      <span className="block text-sm font-medium text-slate-100">{t(titleKey)}</span>
+                      <span className="block text-xs text-slate-500">{t(subtitleKey)}</span>
+                    </span>
+                    <ChevronRight size={16} className="shrink-0 text-slate-600 rtl:rotate-180" aria-hidden />
+                  </Link>
+                ))}
               </div>
             </div>
           ))}

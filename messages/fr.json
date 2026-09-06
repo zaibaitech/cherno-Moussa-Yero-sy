@@ -204,6 +204,7 @@
     "categoryTextAnalysis": "Nom et analyse de texte",
     "categoryDivine": "Noms Divins et Dhikr",
     "categoryQuran": "Réflexion Coranique",
+    "backToCalculators": "Tous les calculateurs",
     "divineNameSubtitle": "Noms Divins dont la valeur abjad propre est numériquement la plus proche du total Kabīr de ce nom, selon la règle de correspondance de cette application.",
     "exactMatchLabel": "Correspondance exacte",
     "closestMatchLabel": "Correspondance la plus proche",

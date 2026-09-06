@@ -204,6 +204,7 @@
     "categoryTextAnalysis": "Name & Text Analysis",
     "categoryDivine": "Divine Names & Dhikr",
     "categoryQuran": "Qur'anic Reflection",
+    "backToCalculators": "All calculators",
     "divineNameSubtitle": "Divine Names whose own Abjad value is numerically closest to this name's Kabīr total, according to this app's matching rule.",
     "exactMatchLabel": "Exact Match",
     "closestMatchLabel": "Closest Match",

@@ -18,7 +18,7 @@ import {
 } from '@/lib/abjad/textAnalysis';
 import { DHIKR_TIMING, DHIKR_PREPARATION, DHIKR_ETIQUETTE } from '@/lib/abjad/calculatorContent';
 import { InfoDisclosure, InfoIconButton } from './InfoDisclosure';
-import type { CalculationType } from './CalculationTypeSelector';
+import type { CalculationType } from './calculatorTypes';
 
 const ELEMENT_BAR_COLOR: Record<ElementType, string> = {
   fire: '#f97316',
@@ -27,7 +27,7 @@ const ELEMENT_BAR_COLOR: Record<ElementType, string> = {
   earth: '#34d399',
 };
 
-// divineResonance/quranicResonance never reach this component (CalculatorForm
+// divineResonance/quranicResonance never reach this component (CalculatorTypeForm
 // routes them to ResonanceResult instead) — entries kept only for type safety.
 const ANALYSIS_TITLE_KEY: Record<CalculationType, string> = {
   name: 'analysisTitleName',

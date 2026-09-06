@@ -8,7 +8,7 @@ import { pick, type Locale } from '@/lib/abjad/buruj';
 import { computeDivineResonance } from '@/lib/abjad/divineResonance';
 import { computeQuranResonance, type QuranResonanceResult } from '@/lib/abjad/quranResonance';
 import { InfoDisclosure } from './InfoDisclosure';
-import type { CalculationType } from './CalculationTypeSelector';
+import type { CalculationType } from './calculatorTypes';
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return <p className="text-sm font-semibold text-gold">{children}</p>;

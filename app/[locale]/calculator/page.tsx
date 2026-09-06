@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { CalculatorForm } from '@/components/calculator/CalculatorForm';
+import { CalculatorTypeBrowser } from '@/components/calculator/CalculationTypeSelector';
 
 export default async function CalculatorPage() {
   const t = await getTranslations('calculator');
@@ -10,7 +10,7 @@ export default async function CalculatorPage() {
         <h1 className="text-xl font-semibold text-gold">{t('title')}</h1>
         <p className="text-sm text-slate-400">{t('subtitle')}</p>
       </div>
-      <CalculatorForm />
+      <CalculatorTypeBrowser />
     </div>
   );
 }
